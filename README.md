@@ -8,3 +8,10 @@ CleverCook is vision to bring great recipes to anyone. We want to be able to pro
 
 ### User Reaserch
 asdfdklhgasdf
+
+
+### Static Figma
+https://www.figma.com/file/RXfHImkF3XYgBFW0hSekEr/CIS4930%2F5930MidFiPrototype?type=design&node-id=0-1&mode=design&t=BfAGjUjjYfWgEi9R-0
+
+### Dynamic Figma
+https://www.figma.com/proto/RXfHImkF3XYgBFW0hSekEr/CIS4930%2F5930MidFiPrototype?type=design&node-id=20-601&t=BfAGjUjjYfWgEi9R-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=17%3A191
