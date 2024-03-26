@@ -20,12 +20,15 @@ The Medium-Fi Interactive Prototype aims to address all identified user challeng
 
 ### Storyboards
 #### Easy Task
-asdf
+![image](https://github.com/ampiaget/HCIProject/assets/165094516/98bb1538-5e16-4e91-b4eb-91b8ab72bf59)
+
 #### Medium Task
-asdf
+![image](https://github.com/ampiaget/HCIProject/assets/165094516/4fd1cb4f-13c9-4723-8654-9b8a5100e508)
+
 
 #### Hard Task
-asdf
+![image](https://github.com/ampiaget/HCIProject/assets/165094516/7263ceba-7161-45c0-a214-4c2d84bd2b26)
+
 
 ### Static Figma
 https://www.figma.com/file/RXfHImkF3XYgBFW0hSekEr/CIS4930%2F5930MidFiPrototype?type=design&node-id=0-1&mode=design&t=BfAGjUjjYfWgEi9R-0
