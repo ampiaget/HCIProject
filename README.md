@@ -10,6 +10,15 @@ CleverCook is vision to bring great recipes to anyone. We want to be able to pro
 asdfdklhgasdf
 
 
+### Storyboards
+##### Easy Task
+
+##### Medium Task
+
+
+##### Hard Task
+
+
 ### Static Figma
 https://www.figma.com/file/RXfHImkF3XYgBFW0hSekEr/CIS4930%2F5930MidFiPrototype?type=design&node-id=0-1&mode=design&t=BfAGjUjjYfWgEi9R-0
 
