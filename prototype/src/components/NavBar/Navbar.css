@@ -1,0 +1,66 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100vw;
+    /* padding: 5px 20px; */
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    background-color: #ffffff; 
+    color: #000000; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    list-style-type: none; /* removes bullets from the list links */
+    margin: 0px;
+    padding: 5px 20px;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 50px; /* to change the space between the links */
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #363636;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.logo-image {
+    width: 10%; /* big image so only 10% of original size */
+    height: 10%;
+    margin-right: -25px; /* need these margins to move image above the text */
+    margin-bottom: 60px;
+}
+
+.logo-text {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+}
+
