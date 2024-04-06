@@ -1,0 +1,4 @@
+Setup using node version v21.7.2
+To run:
+`npm install`
+`npm start`
