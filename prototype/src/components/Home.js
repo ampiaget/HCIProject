@@ -1,9 +1,13 @@
 import React from 'react';
+import recipeList from './recipeList.json';
 
 const Home = () => {
     const [selectedItem, setSelectedItem] = useState(null);
+    const [cardDetails, setCardDetails] = useState({});
     const handleSelection = (item) => {
+        const selectedCard = recipeList.find(card => card.title === item);
         setSelectedItem(item);
+        setCardDetails(selectedCard.details);
     };
 
     return (
@@ -12,54 +16,14 @@ const Home = () => {
             <div style={{ width: '30%', backgroundColor: '#CC4425', padding: '10px', overflowY: 'auto' }}>
                 <h2>Select an Item:</h2>
                 {/* Card Container */}
-                <div style={{ marginBottom: '10px' }}>
-                    <div style={cardStyle} onClick={() => handleSelection('Honey Sriracha Salmon')}>
-                        <h3>Honey Sriracha Salmon</h3>
-                        <p>Time: 1h25m</p>
+                {recipeList.map((recipe) => (
+                    <div key={recipe.id} style={{ marginBottom: '5px' }}>
+                        <div style={cardStyle} onClick={() => handleSelection(recipe.title, recipe.details)}>
+                            <h3>{recipe.title}</h3>
+                            <p>Difficulty: {recipe.difficulty} <br/> Time: {recipe.time}</p>
+                        </div>
                     </div>
-                </div>
-                <div style={{ marginBottom: '10px' }}>
-                    <div style={cardStyle} onClick={() => handleSelection('Seared Tuna Steaks')}>
-                        <h3>Seared Tuna Steaks</h3>
-                        <p>Lorem</p>
-                    </div>
-                </div>
-                <div style={{ marginBottom: '10px' }}>
-                    <div style={cardStyle} onClick={() => handleSelection('Cajun Chicken')}>
-                        <h3>Cajun Chicken</h3>
-                        <p>ipsum</p>
-                    </div>
-                </div>
-                <div style={{ marginBottom: '10px' }}>
-                    <div style={cardStyle} onClick={() => handleSelection('Snoop Dogg\'s Lobster Thermidor')}>
-                        <h3>Snoop Dogg's Lobster Thermidor</h3>
-                        <p>dolor</p>
-                    </div>
-                </div>
-                <div style={{ marginBottom: '10px' }}>
-                    <div style={cardStyle} onClick={() => handleSelection('Julia Child\'s Beef Bourginon')}>
-                        <h3>Julia Child's Beef Bourginon</h3>
-                        <p>sit</p>
-                    </div>
-                </div>
-                <div style={{ marginBottom: '10px' }}>
-                    <div style={cardStyle} onClick={() => handleSelection('Kraft Mac N\' Cheese')}>
-                        <h3>Kraft Mac N' Cheese</h3>
-                        <p>amet</p>
-                    </div>
-                </div>
-                <div style={{ marginBottom: '10px' }}>
-                    <div style={cardStyle} onClick={() => handleSelection('Cajun Butter Salmon')}>
-                        <h3>Cajun Butter Salmon</h3>
-                        <p>consectetur</p>
-                    </div>
-                </div>
-                <div style={{ marginBottom: '10px' }}>
-                    <div style={cardStyle} onClick={() => handleSelection('Key Lime Pie')}>
-                        <h3>Key Lime Pie</h3>
-                        <p>adipiscing</p>
-                    </div>
-                </div>
+                ))}
             </div>
 
             {/* Right Pane */}
@@ -67,7 +31,17 @@ const Home = () => {
                 <div style={recipeHeaderStyle}>
                     <h2>Recipe for {selectedItem}</h2>
                 </div>
-                {selectedItem && <p>{selectedItem}</p>}
+                {selectedItem && 
+                <p>{selectedItem}<br />
+                Ingredients:<br /> 
+                <ul>
+                    {cardDetails.ingredients && cardDetails.ingredients.map((ingredient, index) => (
+                        <li>{ingredient}</li>
+                    ))}
+                </ul>
+                </p>
+                }
+
             </div>
         </div>
     );
@@ -86,7 +60,7 @@ const cardStyle = {
 
 };
 
-
+//CSS for the header inside the right pane
 const recipeHeaderStyle = {
     position: 'relative',
     left: '-15px',
