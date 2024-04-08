@@ -13,6 +13,7 @@ const Navbar = () => {
                     <span className="logo-text">CleverCook</span>
                 </Link>
             </div>
+            
             <div className="navbar-right">
                 {/* the page links on the right */}
                 <ul className="navbar-links">

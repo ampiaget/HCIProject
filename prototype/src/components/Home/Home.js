@@ -1,5 +1,6 @@
-import React from 'react';
-import recipeList from './recipeList.json';
+import React, { useState } from 'react';
+import recipeList from '../recipeList.json';
+import './Home.css'
 
 const Home = () => {
     const [selectedItem, setSelectedItem] = useState(null);
@@ -11,16 +12,25 @@ const Home = () => {
     };
 
     return (
-        <div style={{ display: 'flex', height: '100vh' }}>
+        <div className='homepage'>
+
             {/* Left Pane */}
-            <div style={{ width: '30%', backgroundColor: '#CC4425', padding: '10px', overflowY: 'auto' }}>
-                <h2>Select an Item:</h2>
+            <div className='homepage-left'>
+                <h2>Search bar here**</h2>
+
                 {/* Card Container */}
                 {recipeList.map((recipe) => (
-                    <div key={recipe.id} style={{ marginBottom: '5px' }}>
-                        <div style={cardStyle} onClick={() => handleSelection(recipe.title, recipe.details)}>
-                            <h3>{recipe.title}</h3>
-                            <p>Difficulty: {recipe.difficulty} <br/> Time: {recipe.time}</p>
+                    <div key={recipe.id} className='recipelist-card'> 
+                        <div onClick={() => handleSelection(recipe.title, recipe.details)}>
+                            <div className='recipelist-card-left'>
+                                <span className='recipelist-card-title'>{recipe.title}</span>
+                                <span className='recipelist-card-info'>Time: {recipe.time}</span>
+                            </div>
+                            <div className='recipelist-card-right'>
+                                <span className='recipelist-card-info'>difficulty: {recipe.difficulty}</span>
+                                <span className='recipelist-card-info'>user rating x / 10 </span>
+                            </div> 
+                            
                         </div>
                     </div>
                 ))}
@@ -71,5 +81,7 @@ const recipeHeaderStyle = {
     padding: '10px',
     backgroundColor: '#7c7e82',
 }
+
+
 
 export default Home;
