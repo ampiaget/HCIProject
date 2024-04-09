@@ -1,15 +1,28 @@
-import React, { useState } from 'react';
-import recipeList from '../recipeList.json';
+import React, { useState, useEffect } from 'react';
+// import recipeList from '../recipeList.json';
 import clockImage from '../../assets/Clock.png';
-
+import axios from 'axios';
 import './Home.css'
 
 const Home = () => {
+
+    const [recipes, setRecipes] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://localhost:5000/recipes')
+            .then(response => {
+                setRecipes(response.data);
+            })
+            .catch(error => {
+                console.error('Error fetching recipes:', error);
+            });
+    }, []);
+
     const [selectedItem, setSelectedItem] = useState(null);
     const [cardDetails, setCardDetails] = useState({});
     const [selectedTime, setSelectedTime] = useState(null);
     const handleSelection = (item) => {
-        const selectedCard = recipeList.find(card => card.title === item);
+        const selectedCard = recipes.find(card => card.title === item);
         setSelectedItem(item);
         setSelectedTime(selectedCard.time);
         setCardDetails(selectedCard.details);
@@ -23,7 +36,7 @@ const Home = () => {
                 <h2>Search bar here**</h2>
 
                 {/* Card Container */}
-                {recipeList.map((recipe) => (
+                {recipes.map((recipe) => (
                     <div key={recipe.id}> 
                         <div className='recipelist-card' onClick={() => handleSelection(recipe.title, recipe.details)}>
                             <div className='recipelist-card-left'>
@@ -82,7 +95,6 @@ const Home = () => {
                         <li>{ingredient}</li>
                     ))}
                 </ul>
-            
             </div>
             }
             </div>

@@ -18,7 +18,7 @@ const Navbar = () => {
                 {/* the page links on the right */}
                 <ul className="navbar-links">
                     <li><Link to="/" className="navbar-link">Home</Link></li>
-                    <li><Link to="/post" className="navbar-link">Post</Link></li>
+                    <li><Link to="/add" className="navbar-link">Post</Link></li>
                 </ul>
             </div>
         </nav>
