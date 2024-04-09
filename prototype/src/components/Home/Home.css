@@ -12,8 +12,8 @@
 
 .recipelist-card{
     position: relative;
-    /* display:flex;
-    flex-direction: row; */
+    display:flex;
+    flex-direction: row;
     
     height: 90px;
     background-color: #ffffff;
@@ -34,7 +34,7 @@
     padding-top: 15px;
     padding-left: 15px;
     align-items: center;
-
+    
 }
 
 .recipelist-card-info{
@@ -53,17 +53,130 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    margin: auto;
+    margin-left: 0;
 }
 
 .recipelist-card-right {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
+    margin: auto;
 }
 
+.recipe-card{
+    width: 70%;
+    background: #ffffff;
+    overflow-y: auto;
+}
 
+.recipe-card-header{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.made-it-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    gap: 8px;
+    margin-right: 20px;
 
+    background: #3E4147;
+    border-radius: 8px;
+    border: none;
 
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
 
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
 
+.recipe-card-title-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6px 0px 6px 60px;
+
+    position: relative;
+    max-width: 600px;
+    background: #EAECEF;
+    border-radius: 0px 8px 8px 0px;
+
+    position: relative;
+    display:flex;
+    flex-direction: row;
+}
+
+.recipe-card-title{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 150%;
+    color: #363636;
+}
+
+.recipe-card-title-card-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: auto;
+    margin-left: 0;
+}
+
+.recipe-card-title-card-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.recipe-card-first-row{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+}
+
+.recipe-card-ingredients{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: auto;
+    margin-left: 0;
+}
+
+.recipe-card-about{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.recipe-card-section{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+
+    color: #000000;
+    margin: 20px;
+
+    padding: 0px 20px 10px 20px;
+    border-bottom: 3px solid #CC4425 ;
+}

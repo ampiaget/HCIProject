@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import recipeList from '../recipeList.json';
+import clockImage from '../../assets/Clock.png';
+
 import './Home.css'
 
 const Home = () => {
     const [selectedItem, setSelectedItem] = useState(null);
     const [cardDetails, setCardDetails] = useState({});
+    const [selectedTime, setSelectedTime] = useState(null);
     const handleSelection = (item) => {
         const selectedCard = recipeList.find(card => card.title === item);
         setSelectedItem(item);
+        setSelectedTime(selectedCard.time);
         setCardDetails(selectedCard.details);
     };
 
@@ -20,8 +24,8 @@ const Home = () => {
 
                 {/* Card Container */}
                 {recipeList.map((recipe) => (
-                    <div key={recipe.id} className='recipelist-card'> 
-                        <div onClick={() => handleSelection(recipe.title, recipe.details)}>
+                    <div key={recipe.id}> 
+                        <div className='recipelist-card' onClick={() => handleSelection(recipe.title, recipe.details)}>
                             <div className='recipelist-card-left'>
                                 <span className='recipelist-card-title'>{recipe.title}</span>
                                 <span className='recipelist-card-info'>Time: {recipe.time}</span>
@@ -29,59 +33,61 @@ const Home = () => {
                             <div className='recipelist-card-right'>
                                 <span className='recipelist-card-info'>difficulty: {recipe.difficulty}</span>
                                 <span className='recipelist-card-info'>user rating x / 10 </span>
-                            </div> 
-                            
+                            </div>  
                         </div>
                     </div>
                 ))}
             </div>
 
             {/* Right Pane */}
-            <div style={{ width: '70%', backgroundColor: '#e0e0e0', padding: '10px', overflowY: 'auto' }}>
-                <div style={recipeHeaderStyle}>
-                    <h2>Recipe for {selectedItem}</h2>
+            <div className='recipe-card'>
+            {selectedItem && 
+            <div>
+                <div className='recipe-card-header'>
+                    {/* Recipe title & info */}
+                    <div className='recipe-card-title-card'> 
+                        <div className='recipe-card-title-card-left'>
+                            <span className='recipe-card-title'>{selectedItem}</span>
+                            <div>
+                                <img src={clockImage}  alt="clock" className="clock-image"/>
+                                <span className='recipelist-card-info'>{selectedTime}</span>
+                            </div>
+                        </div>
+                        <div className='recipe-card-title-card-right'>
+                            <span className='recipelist-card-info'>difficulty: x/ 10</span>
+                            <span className='recipelist-card-info'>user rating x / 10 </span>
+                        </div> 
+                    </div>
+                    {/* I made it button */}
+                    <div>
+                        <button className='made-it-button'>I made it!</button>
+                    </div>
                 </div>
-                {selectedItem && 
-                <p>{selectedItem}<br />
-                Ingredients:<br /> 
+
+                {/* Ingredients and About */}
+                <div className='recipe-card-first-row'>
+                    <div className='recipe-card-ingredients'>
+                        <span className='recipe-card-section'>Ingredients</span>
+                    </div>
+                    <div className='recipe-card-about'>
+                        <span className='recipe-card-section'>About</span>
+                    </div>
+                </div>
+               
+                <div>
+                    <span className='recipe-card-section'>Recipe</span>
+                </div>
                 <ul>
                     {cardDetails.ingredients && cardDetails.ingredients.map((ingredient, index) => (
                         <li>{ingredient}</li>
                     ))}
                 </ul>
-                </p>
-                }
-
+            
+            </div>
+            }
             </div>
         </div>
     );
 };
-
-// CSS for the card style
-const cardStyle = {
-    position: 'relative',
-    left: '-15px', //-2%
-    border: '1px solid #ccc',
-    borderRadius: '5px',
-    padding: '10px',
-    cursor: 'pointer',
-    backgroundColor: '#fff',
-    boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
-
-};
-
-//CSS for the header inside the right pane
-const recipeHeaderStyle = {
-    position: 'relative',
-    left: '-15px',
-    top: '-15px',
-    width: '500px',
-    border: '1px solid #ccc',
-    borderRadius: '5px',
-    padding: '10px',
-    backgroundColor: '#7c7e82',
-}
-
-
 
 export default Home;
