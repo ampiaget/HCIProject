@@ -1,1 +1,65 @@
-[{"id":1,"title":"Honey Sriracha Salmon","difficulty":"4/10","time":"1h30m","details":{"ingredients":["1 lb Salmon","1 tbsp neutral oil","1 tbsp Soy Sauce","1.5 tbsp Honey","2 tbsp Sriracha","1 clove Garlic","1 tbsp Rice Vinegar"],"instructions":["Step 1. Preheat Oven to 425","Step 2. Pat Salmon dry"]}},{"id":2,"title":"Seared Tuna Steaks","difficulty":"5/10","time":"20m","details":{"ingredients":["1 Tuna Steak","1 tbsp Sesame Oil","2 tbsp Soy Sauce","1 tbsp Honey","1/4 tsp Cayenne Pepper","1/4 tsp Black Pepper"],"instructions":[]}},{"title":"new recipe","difficulty":"2","time":"2m","details":{"ingredients":["bread"],"instructions":[]}},{"title":"title","difficulty":"2","time":"20m","details":{"ingredients":["rice"],"instructions":[]}}]
+[
+    {
+      "id": 1,
+      "title": "Honey Sriracha Salmon",
+      "difficulty": "4/10",
+      "time": "1h30m",
+      "details": {
+        "ingredients": [
+          { "name": "Salmon", "type": "essential", "amount": "1 lb" },
+          { "name": "neutral oil", "type": "essential", "amount": "1 tbsp" },
+          { "name": "Soy Sauce", "type": "essential", "amount": "1 tbsp" },
+          { "name": "Honey", "type": "essential", "amount": "1.5 tbsp" },
+          { "name": "Sriracha", "type": "essential", "amount": "2 tbsp" },
+          { "name": "Garlic", "type": "essential", "amount": "1 clove" },
+          { "name": "Rice Vinegar", "type": "essential", "amount": "1 tbsp" }
+        ],
+        "instructions": [
+          "Step 1. Preheat Oven to 425",
+          "Step 2. Pat Salmon dry"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Seared Tuna Steaks",
+      "difficulty": "5/10",
+      "time": "20m",
+      "details": {
+        "ingredients": [
+          { "name": "Tuna Steak", "type": "essential", "amount": "1" },
+          { "name": "Sesame Oil", "type": "essential", "amount": "1 tbsp" },
+          { "name": "Soy Sauce", "type": "essential", "amount": "2 tbsp" },
+          { "name": "Honey", "type": "essential", "amount": "1 tbsp" },
+          { "name": "Cayenne Pepper", "type": "essential", "amount": "1/4 tsp" },
+          { "name": "Black Pepper", "type": "essential", "amount": "1/4 tsp" }
+        ],
+        "instructions": []
+      }
+    },
+    {
+      "title": "new recipe",
+      "difficulty": "2",
+      "time": "2m",
+      "details": {
+        "ingredients": [
+          { 
+            "name": "bread",
+            "type": "essential",
+            "amount": "1 slice"
+          },
+          { 
+            "name": "flour",
+            "type": "alternative",
+            "amount": "2 cups",
+            "alternatives": [
+              { "name": "gluten-free flour", "amount": "2 cups" },
+              { "name": "whole wheat flour", "amount": "2 cups" }
+            ]
+          }
+        ],
+        "instructions": []
+      }
+    }
+  ]
+  

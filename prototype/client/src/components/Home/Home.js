@@ -92,7 +92,7 @@ const Home = () => {
                 </div>
                 <ul>
                     {cardDetails.ingredients && cardDetails.ingredients.map((ingredient, index) => (
-                        <li>{ingredient}</li>
+                        <li key={index}>{ingredient.amount} {ingredient.name}</li>
                     ))}
                 </ul>
             </div>
