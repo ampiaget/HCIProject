@@ -43,7 +43,7 @@ const Add = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/recipes', newRecipe);
+      const response = await axios.post('http://localhost:5000/recipes', newRecipe);
       console.log('Recipe added successfully:', response.data);
       // Clear the form after successfully adding the recipe
       setNewRecipe({

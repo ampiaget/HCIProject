@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "title": "Honey Sriracha Salmon",
+      "difficulty": "4/10",
+      "time": "1h30m",
+      "details": {
+        "ingredients": [
+          "1 lb Salmon",
+          "1 tbsp neutral oil",
+          "1 tbsp Soy Sauce",
+          "1.5 tbsp Honey",
+          "2 tbsp Sriracha",
+          "1 clove Garlic",
+          "1 tbsp Rice Vinegar"
+        ],
+        "instructions": [
+          "Step 1. Preheat Oven to 425",
+          "Step 2. Pat Salmon dry"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Seared Tuna Steaks",
+      "difficulty": "5/10",
+      "time": "20m",
+      "details": {
+        "ingredients": [
+          "1 Tuna Steak",
+          "1 tbsp Sesame Oil",
+          "2 tbsp Soy Sauce",
+          "1 tbsp Honey",
+          "1/4 tsp Cayenne Pepper",
+          "1/4 tsp Black Pepper"
+        ],
+        "instructions": []
+      }
+    },
+    {
+      "title": "new recipe",
+      "difficulty": "2",
+      "time": "2m",
+      "details": {
+        "ingredients": [
+          "bread"
+        ],
+        "instructions": []
+      }
+    }
+  ]

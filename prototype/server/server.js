@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 // Read recipes from JSON file
-const recipesData = JSON.parse(fs.readFileSync('recipeList.json', 'utf-8'));
+const recipesData = JSON.parse(fs.readFileSync('server/recipeList.json', 'utf-8'));
 
 // Get all recipes
 app.get('/recipes', (req, res) => {
@@ -20,7 +20,7 @@ app.get('/recipes', (req, res) => {
 app.post('/recipes', (req, res) => {
   const newRecipe = req.body;
   recipesData.push(newRecipe);
-  fs.writeFileSync('recipeList.json', JSON.stringify(recipesData));
+  fs.writeFileSync('server/recipeList.json', JSON.stringify(recipesData));
   res.status(201).json(newRecipe);
 });
 
@@ -31,7 +31,7 @@ app.put('/recipes/:id', (req, res) => {
   const index = recipesData.findIndex(recipe => recipe.id === parseInt(recipeId));
   if (index !== -1) {
     recipesData[index] = updatedRecipe;
-    fs.writeFileSync('recipeList.json', JSON.stringify(recipesData));
+    fs.writeFileSync('server/recipeList.json', JSON.stringify(recipesData));
     res.json(updatedRecipe);
   } else {
     res.status(404).json({ message: 'Recipe not found' });
@@ -44,7 +44,7 @@ app.delete('/recipes/:id', (req, res) => {
   const index = recipesData.findIndex(recipe => recipe.id === parseInt(recipeId));
   if (index !== -1) {
     recipesData.splice(index, 1);
-    fs.writeFileSync('recipeList.json', JSON.stringify(recipesData));
+    fs.writeFileSync('server/recipeList.json', JSON.stringify(recipesData));
     res.json({ message: 'Recipe deleted' });
   } else {
     res.status(404).json({ message: 'Recipe not found' });
