@@ -85,13 +85,13 @@ const Add = () => {
   return (
     <form onSubmit={handleSubmit} className='post-form'>
       <div className='post-row'>
-        <div>
-          <span>Recipe Name</span>
-          <input type="text" name="title" value={newRecipe.title} onChange={handleChange} />
+        <div className='row-one-left'>
+          <span className='add-recipe-name'>Recipe Name</span>
+          <input className='post-form-name-input' type="text" name="title" value={newRecipe.title} onChange={handleChange} placeholder='enter recipe name'/>
         </div>
-        <div>
-          <span>Difficulty</span>
-          <select value={newRecipe.difficulty} onChange={handleChange} name="difficulty">
+        <div className='row-one-right'>
+          <span className='post-form-section-title'>Difficulty</span>
+          <select className='post-form-difficulty-dropdown' value={newRecipe.difficulty} onChange={handleChange} name="difficulty" placeholder='0'>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -103,18 +103,18 @@ const Add = () => {
             <option value="9">9</option>
             <option value="10">10</option>
           </select>
-          <span>/10</span>
+          <span className='post-form-section-title'>/10</span>
         </div>
       </div>
       <div className='post-row'>
         <div>
-          <span>Expected Time</span>
-          <input type="number" name="time" value={newRecipe.time} onChange={handleChange} />
-          <span>Minutes</span>
+          <span className='post-form-section-title'>Expected Time</span>
+          <input className='post-form-number-input' type="number" name="time" value={newRecipe.time} onChange={handleChange} placeholder='00'/>
+          <span className='post-form-small-text'>Minutes</span>
         </div>
         <div>
-          <span>About</span>
-          <input type="text" name="about" value={newRecipe.about} onChange={handleChange} />
+          <span className='post-form-section-title'>About</span>
+          <input className='post-form-about-input' type="text" name="about" value={newRecipe.about} onChange={handleChange} />
         </div>
       </div>
       <div className='post-row'>
