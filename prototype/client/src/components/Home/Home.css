@@ -111,7 +111,7 @@
     padding: 6px 0px 6px 60px;
 
     position: relative;
-    max-width: 600px;
+    max-width: 730px;
     background: #EAECEF;
     border-radius: 0px 8px 8px 0px;
 
@@ -136,6 +136,7 @@
 
     margin: auto;
     margin-left: 0;
+    margin-right: 20px;
 }
 
 .recipe-card-title-card-right{
@@ -150,8 +151,18 @@
     position: relative;
     display:flex;
     flex-direction: row;
+    align-items: flex-start;
 }
 
+.recipe-card-time{
+    display: flex;
+    align-items: center;
+}
+
+.clock-image{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 .recipe-card-ingredients{
     display: flex;
     flex-direction: column;
@@ -165,7 +176,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: auto;
+    margin-right: auto;
 }
 
 .recipe-card-section{

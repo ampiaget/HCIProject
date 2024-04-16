@@ -1,0 +1,99 @@
+.ingredient-card{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    margin:auto;
+    margin-left: 25px;
+    margin-bottom: 8px;
+}
+
+.ingredient-card-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    margin-left: 0px;
+}
+
+.ingredient-card-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    margin-right: 0px;
+}
+
+.ingredient-card-name{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+
+    color: #3E4147;
+}
+
+.ingredient-card-amount{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+
+    color: #3E4147;
+}
+
+.ingredient-card-type{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+
+    color: #3E4147;
+}
+
+.ingredient-type-image{
+    width: 35px;
+    height: auto;
+}
+
+.ingredient-type-star{
+    font-size: 30px;
+    color: #CC4425;
+    margin: 4px;
+}
+
+.ingredient-type-checkbox {
+
+    /* Hide the default checkbox styles from browsers*/
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+
+    width: 30px;
+    height: 30px;
+    border: 2px solid #999;
+    border-radius: 4px;
+
+    cursor: pointer;
+    margin: 4px;
+    margin-right: 9px;
+}
+
+.ingredient-type-checkbox:checked::before {
+    content: '\2713'; /* Unicode character for a checkmark */
+    color: #CC4425; /* Color of the checkmark */
+    font-size: 28px; /* Adjust the font size as needed */
+    line-height: 30px; /* Adjust the line height to center the checkmark vertically */
+    text-align: center; /* Center the checkmark horizontally */
+}

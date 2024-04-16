@@ -2,28 +2,31 @@
     {
       "id": 1,
       "title": "Honey Sriracha Salmon",
-      "difficulty": "4/10",
+      "about": "delicious dish",
+      "difficulty": "4",
       "time": "1h30m",
       "details": {
         "ingredients": [
           { "name": "Salmon", "type": "essential", "amount": "1 lb" },
-          { "name": "neutral oil", "type": "essential", "amount": "1 tbsp" },
+          { "name": "neutral oil", "type": "optional", "amount": "1 tbsp" },
           { "name": "Soy Sauce", "type": "essential", "amount": "1 tbsp" },
           { "name": "Honey", "type": "essential", "amount": "1.5 tbsp" },
           { "name": "Sriracha", "type": "essential", "amount": "2 tbsp" },
           { "name": "Garlic", "type": "essential", "amount": "1 clove" },
-          { "name": "Rice Vinegar", "type": "essential", "amount": "1 tbsp" }
+          { "name": "Rice Vinegar", "type": "optional", "amount": "1 tbsp" }
         ],
         "instructions": [
-          "Step 1. Preheat Oven to 425",
-          "Step 2. Pat Salmon dry"
+          "Preheat Oven to 425",
+          "Pat Salmon dry"
         ]
-      }
+      },
+      "userRatings": [3, 4, 5, 4]
     },
     {
       "id": 2,
       "title": "Seared Tuna Steaks",
-      "difficulty": "5/10",
+      "about": "yummy dish",
+      "difficulty": "5",
       "time": "20m",
       "details": {
         "ingredients": [
@@ -35,10 +38,45 @@
           { "name": "Black Pepper", "type": "essential", "amount": "1/4 tsp" }
         ],
         "instructions": []
-      }
+      },
+      "userRatings": [5, 4, 5, 6]
     },
     {
+      "id": 3,
+      "title": "Stir-Fried Chicken and Vegetables",
+      "about": "Quick and healthy stir-fry",
+      "difficulty": "3",
+      "time": "30m",
+      "details": {
+        "ingredients": [
+          { "name": "Chicken Breast", "type": "alternative", "amount": "1 lb", "alternatives": [
+            { "name": "Beef Sirloin Strips", "amount": "1 lb" },
+            { "name": "Shrimp", "amount": "1lb" }
+          ]},
+          { "name": "Mixed Vegetables", "type": "essential", "amount": "4 cups" },
+          { "name": "Soy Sauce", "type": "essential", "amount": "3 tbsp" },
+          { "name": "Ginger", "type": "essential", "amount": "1 tbsp, minced" },
+          { "name": "Garlic", "type": "essential", "amount": "2 cloves, minced" },
+          { "name": "Rice", "type": "essential", "amount": "2 cups,cooked" }
+        ],
+        "instructions": [
+          "Prepare meat choice. For chicken, thinly slice chicken breast. For beef, cut beef into thin strips. For shrimp, peel and devein shrimp.",
+          "Heat some oil in a skillet or wok over medium-high heat.",
+          "Add minced garlic and ginger to the skillet and cook until fragrant, about 30 seconds.",
+          "If using chicken, add the chicken slices to the skillet and cook until browned and cooked through.",
+          "If using beef, add the beef strips to the skillet and cook until browned and cooked to your liking.",
+          "If using shrimp, add the peeled and deveined shrimp to the skillet and cook until pink and opaque, about 2-3 minutes per side.",
+          "Add mixed vegetables to the skillet and stir-fry until they are tender-crisp.",
+          "Pour soy sauce over the chicken, beef, or shrimp and vegetables, and toss everything together until evenly coated.",
+          "Serve stir-fried chicken, beef, or shrimp and vegetables over cooked rice. Enjoy your delicious stir-fry!"
+        ]
+      },
+      "userRatings": []
+    },
+    {
+      "id": 4,
       "title": "new recipe",
+      "about": "so good and delicious",
       "difficulty": "2",
       "time": "2m",
       "details": {
@@ -59,7 +97,8 @@
           }
         ],
         "instructions": []
-      }
+      },
+      "userRatings": []
     }
   ]
   
