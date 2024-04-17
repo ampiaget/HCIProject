@@ -15,6 +15,7 @@
     align-items: flex-start;
     margin: auto;
     margin-left: 0px;
+    margin-right: 35px;
 }
 
 .ingredient-card-right{
@@ -61,45 +62,46 @@
     color: #3E4147;
 }
 
-.ingredient-type-image{
-    width: 35px;
-    height: auto;
-}
-
 .ingredient-type-star{
     font-size: 30px;
     color: #CC4425;
-    margin: 4px;
+    /* margin: 4px; */
+    margin-right: 35px;
 }
 
 .ingredient-alternatives-dropdown{
-    appearance: none; /* Hide default dropdown arrow */
+    display: flex;
+    flex-direction: column;
+}
+
+.alternative-option{
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 200px;
+
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #fff;
     cursor: pointer;
 }
-.alternative-option{
-    font-size: 16px; /* Adjust font size of options */
-    padding: 10px; /* Adjust padding of options */
-    background-color: #fff; /* Background color of options */
-    color: #333; /* Text color of options */
-    }
+
+.dropdown-button{
+    padding: 12px 12px;
+    background: #FFFFFF;
+    border: 1px solid #999;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
 .dropdown-arrow {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
     width: 0;
     height: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-top: 8px solid #555; /* Color of the arrow */
-  }
+}
+
 .ingredient-type-checkbox {
     appearance: none;
     -webkit-appearance: none;
@@ -112,14 +114,13 @@
     border-radius: 4px;
 
     cursor: pointer;
-    margin: 4px;
-    margin-right: 9px;
+    margin-right: 40px;
 }
 
 .ingredient-type-checkbox:checked::before {
     content: '\2713'; /* Unicode character for a checkmark */
-    color: #CC4425; /* Color of the checkmark */
-    font-size: 28px; /* Adjust the font size as needed */
-    line-height: 30px; /* Adjust the line height to center the checkmark vertically */
-    text-align: center; /* Center the checkmark horizontally */
+    color: #CC4425; 
+    font-size: 28px;
+    line-height: 30px; 
+    text-align: center;
 }

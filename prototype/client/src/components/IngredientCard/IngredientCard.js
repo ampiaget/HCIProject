@@ -1,31 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import essential_star from '../../assets/Star.png';
 import checkmark from '../../assets/Checkbox.png';
 import './IngredientCard.css'
 
 const IngredientCard = ({ingredient}) => {
+
+    const [showAlternative, setShowAlternative] = useState(null);
+    const [cardIngredient, setCardIngredient] = useState(ingredient);
+
+
+    const handleDropdownClicked = () => {
+        setShowAlternative(!showAlternative);
+    }
+
+    const handleIngredientChange = (alt) => {
+        setCardIngredient(alt);
+        handleDropdownClicked();
+    }
+
     return (
         <div className="ingredient-card">
             <div className="ingredient-card-left">
-                <span className="ingredient-card-name">{ingredient.name}</span>
-                <span className="ingredient-card-amount">{ingredient.amount} </span>
+                <span className="ingredient-card-name">{cardIngredient.name}</span>
+                <span className="ingredient-card-amount">{cardIngredient.amount} </span>
+                {showAlternative &&
+                    <div className="ingredient-alternatives-dropdown">
+                        <button className="alternative-option" onClick={() => handleIngredientChange(ingredient)}>
+                                <span className="ingredient-card-name">{ingredient.name}</span>
+                                <span className="ingredient-card-amount">{ingredient.amount}</span>
+                        </button>
+                        {ingredient.Alternatives.map((alt, index) => (
+                            <button key={index} className="alternative-option" onClick={() => handleIngredientChange(alt)}>
+                                <span className="ingredient-card-name">{alt.name}</span>
+                                <span className="ingredient-card-amount">{alt.amount}</span>
+                            </button>
+                        ))}
+                    </div>
+                }
             </div>
             <div className="ingredient-card-right">
 
-                {ingredient.type === "essential" && (
+                {ingredient.type === "Essential" && (
                     <span className="ingredient-type-star">&#9733;</span>
                 )}
-                {ingredient.type === "alternative" && (
-                    <div>
-                    <select className="ingredient-alternatives-dropdown">
-                        {ingredient.alternatives.map((alt, index) => (
-                            <option key={index} className="alternative-option">{alt.name}</option>
-                        ))}
-                    </select>
-                    <div class="dropdown-arrow"></div>
-                    </div>
+                {ingredient.type === "Alternatives" && (
+                    <button onClick={handleDropdownClicked} className="dropdown-button">
+                        <div class="dropdown-arrow"></div>
+                    </button>
                 )}
-                {ingredient.type === "optional" && (
+                {ingredient.type === "Optional" && (
                     <input
                         type="checkbox"
                         className="ingredient-type-checkbox"
