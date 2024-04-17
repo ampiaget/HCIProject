@@ -72,9 +72,35 @@
     margin: 4px;
 }
 
+.ingredient-alternatives-dropdown{
+    appearance: none; /* Hide default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.alternative-option{
+    font-size: 16px; /* Adjust font size of options */
+    padding: 10px; /* Adjust padding of options */
+    background-color: #fff; /* Background color of options */
+    color: #333; /* Text color of options */
+    }
+.dropdown-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #555; /* Color of the arrow */
+  }
 .ingredient-type-checkbox {
-
-    /* Hide the default checkbox styles from browsers*/
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;

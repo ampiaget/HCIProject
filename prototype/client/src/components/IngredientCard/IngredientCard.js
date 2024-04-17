@@ -13,26 +13,25 @@ const IngredientCard = ({ingredient}) => {
             <div className="ingredient-card-right">
 
                 {ingredient.type === "essential" && (
-                    // <img src={essential_star} alt="Star" className="ingredient-type-image" />
                     <span className="ingredient-type-star">&#9733;</span>
                 )}
-                {/* {ingredient.type === "alternative" && (
+                {ingredient.type === "alternative" && (
+                    <div>
                     <select className="ingredient-alternatives-dropdown">
                         {ingredient.alternatives.map((alt, index) => (
-                            <option key={index}>{alt}</option>
+                            <option key={index} className="alternative-option">{alt.name}</option>
                         ))}
                     </select>
-                )} */}
+                    <div class="dropdown-arrow"></div>
+                    </div>
+                )}
                 {ingredient.type === "optional" && (
                     <input
                         type="checkbox"
                         className="ingredient-type-checkbox"
-                        id={ingredient.name} // Use a unique identifier for each checkbox
+                        id={ingredient.name}
                     />
                 )}
-                {/* if ingredient type == essential show star image
-                if ingredient type == alternatives show dropdown of alternative
-                if ingredient type == optional show checkmark image */}
                 <span className="ingredient-card-type">{ingredient.type}</span>
 
             </div>

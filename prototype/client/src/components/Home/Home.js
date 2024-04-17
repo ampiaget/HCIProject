@@ -116,7 +116,10 @@ const Home = () => {
                 </div>
                 <ul>
                     {selectedRecipe.details.instructions && selectedRecipe.details.instructions.map((instruction, index) => (
-                        <li key={index}>{index + 1} {instruction}</li>
+                        <div key={index} className='recipe-card-instruction-card'>
+                            <span className='recipe-card-instruction-index'>{index + 1}.</span> 
+                            <span className='recipe-card-instruction'>{instruction}</span>
+                        </div>
                        
                     ))}
                 </ul>
