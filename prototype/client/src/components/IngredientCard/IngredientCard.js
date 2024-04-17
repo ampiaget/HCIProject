@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import essential_star from '../../assets/Star.png';
 import checkmark from '../../assets/Checkbox.png';
 import './IngredientCard.css'
@@ -8,6 +8,9 @@ const IngredientCard = ({ingredient}) => {
     const [showAlternative, setShowAlternative] = useState(null);
     const [cardIngredient, setCardIngredient] = useState(ingredient);
 
+    useEffect(() => {
+        setCardIngredient(ingredient);
+    }, [ingredient]);
 
     const handleDropdownClicked = () => {
         setShowAlternative(!showAlternative);
@@ -55,6 +58,7 @@ const IngredientCard = ({ingredient}) => {
                         id={ingredient.name}
                     />
                 )}
+                
                 <span className="ingredient-card-type">{ingredient.type}</span>
 
             </div>

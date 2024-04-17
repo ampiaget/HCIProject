@@ -118,14 +118,22 @@ const Add = () => {
         </div>
       </div>
       <div className='post-row'>
-        <button type="button" onClick={handleAddIngredient}>Add ingredient</button>
-        {newRecipe.details.ingredients.map((ingredient, index) => (
-          <input key={index} type="text" value={ingredient} onChange={(e) => handleIngredientChange(index, e.target.value)} />
-        ))}
-        <button type="button" onClick={handleAddInstruction}>Add direction</button>
-        {newRecipe.details.instructions.map((instruction, index) => (
-          <input key={index} type="text" value={instruction} onChange={(e) => handleInstructionChange(index, e.target.value)} />
-        ))}
+        <div>
+          <span className='post-form-section-underlined'>Ingredients</span>
+          <button type="button" onClick={handleAddIngredient}>Add ingredient</button>
+          {newRecipe.details.ingredients.map((ingredient, index) => (
+            <input key={index} type="text" value={ingredient} onChange={(e) => handleIngredientChange(index, e.target.value)} />
+          ))}
+        </div>
+        <div>
+          <span className='post-form-section-underlined'>Directions</span>
+          <button type="button" onClick={handleAddInstruction}>Add direction</button>
+          {newRecipe.details.instructions.map((instruction, index) => (
+            <input key={index} type="text" value={instruction} onChange={(e) => handleInstructionChange(index, e.target.value)} />
+          ))}
+        </div>
+        
+        
       </div>
       
       
