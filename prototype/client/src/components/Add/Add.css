@@ -32,7 +32,7 @@
 }
 
 .post-form-name-input{
-    padding: 12px 24px;
+    padding: 12px 8px;
 
     background: #FFFFFF;
     border: 1px solid #E0E0E0;
@@ -52,6 +52,7 @@
 }
 
 .post-form-difficulty-dropdown{
+    position: relative;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -60,6 +61,16 @@
     background: #FFFFFF;
     border: 1px solid #E0E0E0;
     border-radius: 4px;
+}
+
+.dropdown-arrow {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent; 
+    border-right: 5px solid transparent; 
+    border-top: 5px solid #3E4147; 
+    margin-left: -16px;
 }
 
 .post-form-small-text{
@@ -73,29 +84,33 @@
     padding: 20px;
 }
 
+.post-form-about-section{
+    display: flex;
+    align-items: start;
+}
+
 .post-form-about-input{
     padding: 12px 16px;
-    gap: 8px;
-
     width: 410px;
     height: 194px;
-
+    align-content: start;
     background: #FFFFFF;
     border: 1px solid #E0E0E0;
+
     /* Button Shadow */
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 4px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 1;
-
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3E4147;
 }
 
 .post-form-number-input{
-    padding: 12px 16px;
+    padding: 12px 8px;
     gap: 8px;
     border: 1px solid #E0E0E0;
     /* Button Shadow */
@@ -116,3 +131,143 @@
     padding: 0px 20px 10px 20px;
     border-bottom: 3px solid #CC4425;
 }
+
+.post-row-two{
+    margin-top: 20px;
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.post-row-two-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: auto;
+    margin-left: 0;
+}
+
+.post-row-two-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    /* margin: auto; */
+    margin-right: auto;
+}
+
+.post-row-two-header{
+    padding-bottom: 20px;
+}
+
+.post-add-button{
+    background: #CC4425;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 30px;
+    padding: 0px 10px 3px;
+}
+
+.add-ingredient-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding-left: 30px;
+    max-width: 408px;
+
+    background: #EAECEF;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.add-ingredient-card-ingredient{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+
+    color: #000000;
+    margin-right: 16px;
+}
+
+.add-ingredient-card-amount{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #000000;
+    margin-right: 56px;
+}
+
+.add-ingredient-input{
+    box-sizing: border-box;
+    width: 239px;
+    height: 28px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.add-ingredient-card-input-row{
+    display: flex;
+    flex-direction: row;
+    padding: 8px 0px 8px 0px;
+}
+
+.ingredient-card-option-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 14px;
+    margin-right: 16px;
+
+    background: #CC4425;
+    border-radius: 8px;
+    border: none;
+
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.ingredient-card-option-button-active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 14px;
+    margin-right: 16px;
+
+    background: #990000;
+    border-radius: 8px;
+    border: none;
+
+    font-family: 'Merriweather';
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    border: #000000;
+}
+  

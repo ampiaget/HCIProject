@@ -48,7 +48,7 @@ const IngredientCard = ({ingredient}) => {
                 )}
                 {ingredient.type === "Alternatives" && (
                     <button onClick={handleDropdownClicked} className="dropdown-button">
-                        <div class="dropdown-arrow"></div>
+                        <div className="dropdown-arrow"></div>
                     </button>
                 )}
                 {ingredient.type === "Optional" && (
@@ -58,7 +58,7 @@ const IngredientCard = ({ingredient}) => {
                         id={ingredient.name}
                     />
                 )}
-                
+
                 <span className="ingredient-card-type">{ingredient.type}</span>
 
             </div>

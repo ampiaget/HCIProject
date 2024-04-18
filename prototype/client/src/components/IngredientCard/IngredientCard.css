@@ -87,11 +87,13 @@
 }
 
 .dropdown-button{
-    padding: 12px 12px;
+    padding: 12px;
+    padding-left: 28px;
+    padding-right: 4px;
     background: #FFFFFF;
     border: 1px solid #999;
     border-radius: 8px;
-    margin-right: 5px;
+    margin-right: 6px;
 }
 
 .dropdown-arrow {
@@ -99,7 +101,7 @@
     height: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-top: 8px solid #555; /* Color of the arrow */
+    border-top: 8px solid #555; 
 }
 
 .ingredient-type-checkbox {

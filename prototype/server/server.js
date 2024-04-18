@@ -11,6 +11,9 @@ app.use(cors());
 // Read recipes from JSON file
 const recipesData = JSON.parse(fs.readFileSync('server/recipeList.json', 'utf-8'));
 
+// needs to change to however many recipes we put in there
+let lastRecipeId = 4; 
+
 // Get all recipes
 app.get('/recipes', (req, res) => {
   res.json(recipesData);
@@ -19,6 +22,12 @@ app.get('/recipes', (req, res) => {
 // Add a new recipe
 app.post('/recipes', (req, res) => {
   const newRecipe = req.body;
+
+  // Increment the last used recipe ID and assign it to the new recipe
+  lastRecipeId++;
+  newRecipe.id = lastRecipeId;
+
+
   recipesData.push(newRecipe);
   fs.writeFileSync('server/recipeList.json', JSON.stringify(recipesData));
   res.status(201).json(newRecipe);

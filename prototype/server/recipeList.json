@@ -1,104 +1,202 @@
 [
-    {
-      "id": 1,
-      "title": "Honey Sriracha Salmon",
-      "about": "delicious dish",
-      "difficulty": "4",
-      "time": "1h30m",
-      "details": {
-        "ingredients": [
-          { "name": "Salmon", "type": "Essential", "amount": "1 lb" },
-          { "name": "neutral oil", "type": "Optional", "amount": "1 tbsp" },
-          { "name": "Soy Sauce", "type": "Essential", "amount": "1 tbsp" },
-          { "name": "Honey", "type": "Essential", "amount": "1.5 tbsp" },
-          { "name": "Sriracha", "type": "Essential", "amount": "2 tbsp" },
-          { "name": "Garlic", "type": "Essential", "amount": "1 clove" },
-          { "name": "Rice Vinegar", "type": "Optional", "amount": "1 tbsp" }
-        ],
-        "instructions": [
-          "Preheat Oven to 425",
-          "Pat Salmon dry"
-        ]
-      },
-      "userRatings": [3, 4, 5, 4]
+  {
+    "id": 1,
+    "title": "Honey Sriracha Salmon",
+    "about": "delicious dish",
+    "difficulty": "4",
+    "time": "1h30m",
+    "details": {
+      "ingredients": [
+        {
+          "name": "Salmon",
+          "type": "Essential",
+          "amount": "1 lb"
+        },
+        {
+          "name": "neutral oil",
+          "type": "Optional",
+          "amount": "1 tbsp"
+        },
+        {
+          "name": "Soy Sauce",
+          "type": "Essential",
+          "amount": "1 tbsp"
+        },
+        {
+          "name": "Honey",
+          "type": "Essential",
+          "amount": "1.5 tbsp"
+        },
+        {
+          "name": "Sriracha",
+          "type": "Essential",
+          "amount": "2 tbsp"
+        },
+        {
+          "name": "Garlic",
+          "type": "Essential",
+          "amount": "1 clove"
+        },
+        {
+          "name": "Rice Vinegar",
+          "type": "Optional",
+          "amount": "1 tbsp"
+        }
+      ],
+      "instructions": [
+        "Preheat Oven to 425",
+        "Pat Salmon dry"
+      ]
     },
-    {
-      "id": 2,
-      "title": "Seared Tuna Steaks",
-      "about": "yummy dish",
-      "difficulty": "5",
-      "time": "20m",
-      "details": {
-        "ingredients": [
-          { "name": "Tuna Steak", "type": "Essential", "amount": "1" },
-          { "name": "Sesame Oil", "type": "Essential", "amount": "1 tbsp" },
-          { "name": "Soy Sauce", "type": "Essential", "amount": "2 tbsp" },
-          { "name": "Honey", "type": "Essential", "amount": "1 tbsp" },
-          { "name": "Cayenne Pepper", "type": "Essential", "amount": "1/4 tsp" },
-          { "name": "Black Pepper", "type": "Essential", "amount": "1/4 tsp" }
-        ],
-        "instructions": []
-      },
-      "userRatings": [5, 4, 5, 6]
+    "userRatings": [
+      3,
+      4,
+      5,
+      4
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Seared Tuna Steaks",
+    "about": "yummy dish",
+    "difficulty": "5",
+    "time": "20m",
+    "details": {
+      "ingredients": [
+        {
+          "name": "Tuna Steak",
+          "type": "Essential",
+          "amount": "1"
+        },
+        {
+          "name": "Sesame Oil",
+          "type": "Essential",
+          "amount": "1 tbsp"
+        },
+        {
+          "name": "Soy Sauce",
+          "type": "Essential",
+          "amount": "2 tbsp"
+        },
+        {
+          "name": "Honey",
+          "type": "Essential",
+          "amount": "1 tbsp"
+        },
+        {
+          "name": "Cayenne Pepper",
+          "type": "Essential",
+          "amount": "1/4 tsp"
+        },
+        {
+          "name": "Black Pepper",
+          "type": "Essential",
+          "amount": "1/4 tsp"
+        }
+      ],
+      "instructions": []
     },
-    {
-      "id": 3,
-      "title": "Stir-Fried Chicken and Vegetables",
-      "about": "Quick and healthy stir-fry",
-      "difficulty": "3",
-      "time": "30m",
-      "details": {
-        "ingredients": [
-          { "name": "Chicken Breast", "type": "Alternatives", "amount": "1 lb", "Alternatives": [
-            { "name": "Beef Sirloin Strips", "amount": "1 lb" },
-            { "name": "Shrimp", "amount": "1lb" }
-          ]},
-          { "name": "Mixed Vegetables", "type": "Optional", "amount": "4 cups" },
-          { "name": "Soy Sauce", "type": "Essential", "amount": "3 tbsp" },
-          { "name": "Ginger", "type": "Essential", "amount": "1 tbsp, minced" },
-          { "name": "Garlic", "type": "Essential", "amount": "2 cloves, minced" },
-          { "name": "Rice", "type": "Essential", "amount": "2 cups,cooked" }
-        ],
-        "instructions": [
-          "Prepare meat choice. For chicken, thinly slice chicken breast. For beef, cut beef into thin strips. For shrimp, peel and devein shrimp. Prepare meat choice. For chicken, thinly slice chicken breast. For beef, cut beef into thin strips. For shrimp, peel and devein shrimp. Prepare meat choice. For chicken, thinly slice chicken breast. For beef, cut beef into thin strips. For shrimp, peel and devein shrimp. Prepare meat choice. For chicken, thinly slice chicken breast. For beef, cut beef into thin strips. For shrimp, peel and devein shrimp.",
-          "Heat some oil in a skillet or wok over medium-high heat.",
-          "Add minced garlic and ginger to the skillet and cook until fragrant, about 30 seconds.",
-          "If using chicken, add the chicken slices to the skillet and cook until browned and cooked through.",
-          "If using beef, add the beef strips to the skillet and cook until browned and cooked to your liking.",
-          "If using shrimp, add the peeled and deveined shrimp to the skillet and cook until pink and opaque, about 2-3 minutes per side.",
-          "Add mixed vegetables to the skillet and stir-fry until they are tender-crisp.",
-          "Pour soy sauce over the chicken, beef, or shrimp and vegetables, and toss everything together until evenly coated.",
-          "Serve stir-fried chicken, beef, or shrimp and vegetables over cooked rice. Enjoy your delicious stir-fry!"
-        ]
-      },
-      "userRatings": []
+    "userRatings": [
+      5,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Stir-Fried Chicken and Vegetables",
+    "about": "Quick and healthy stir-fry",
+    "difficulty": "3",
+    "time": "30m",
+    "details": {
+      "ingredients": [
+        {
+          "name": "Chicken Breast",
+          "type": "Alternatives",
+          "amount": "1 lb",
+          "Alternatives": [
+            {
+              "name": "Beef Sirloin Strips",
+              "amount": "1 lb"
+            },
+            {
+              "name": "Shrimp",
+              "amount": "1lb"
+            }
+          ]
+        },
+        {
+          "name": "Mixed Vegetables",
+          "type": "Optional",
+          "amount": "4 cups"
+        },
+        {
+          "name": "Soy Sauce",
+          "type": "Essential",
+          "amount": "3 tbsp"
+        },
+        {
+          "name": "Ginger",
+          "type": "Essential",
+          "amount": "1 tbsp, minced"
+        },
+        {
+          "name": "Garlic",
+          "type": "Essential",
+          "amount": "2 cloves, minced"
+        },
+        {
+          "name": "Rice",
+          "type": "Essential",
+          "amount": "2 cups,cooked"
+        }
+      ],
+      "instructions": [
+        "Prepare meat choice. For chicken, thinly slice chicken breast. For beef, cut beef into thin strips. For shrimp, peel and devein shrimp. Prepare meat choice. For chicken, thinly slice chicken breast. For beef, cut beef into thin strips. For shrimp, peel and devein shrimp. Prepare meat choice. For chicken, thinly slice chicken breast. For beef, cut beef into thin strips. For shrimp, peel and devein shrimp. Prepare meat choice. For chicken, thinly slice chicken breast. For beef, cut beef into thin strips. For shrimp, peel and devein shrimp.",
+        "Heat some oil in a skillet or wok over medium-high heat.",
+        "Add minced garlic and ginger to the skillet and cook until fragrant, about 30 seconds.",
+        "If using chicken, add the chicken slices to the skillet and cook until browned and cooked through.",
+        "If using beef, add the beef strips to the skillet and cook until browned and cooked to your liking.",
+        "If using shrimp, add the peeled and deveined shrimp to the skillet and cook until pink and opaque, about 2-3 minutes per side.",
+        "Add mixed vegetables to the skillet and stir-fry until they are tender-crisp.",
+        "Pour soy sauce over the chicken, beef, or shrimp and vegetables, and toss everything together until evenly coated.",
+        "Serve stir-fried chicken, beef, or shrimp and vegetables over cooked rice. Enjoy your delicious stir-fry!"
+      ]
     },
-    {
-      "id": 4,
-      "title": "new recipe",
-      "about": "so good and delicious",
-      "difficulty": "2",
-      "time": "2m",
-      "details": {
-        "ingredients": [
-          { 
-            "name": "bread",
-            "type": "Essential",
-            "amount": "1 slice"
-          },
-          { 
-            "name": "flour",
-            "type": "Alternatives",
-            "amount": "2 cups",
-            "Alternatives": [
-              { "name": "gluten-free flour", "amount": "2 cups" },
-              { "name": "whole wheat flour", "amount": "2 cups" }
-            ]
-          }
-        ],
-        "instructions": []
-      },
-      "userRatings": []
-    }
-  ]
-  
+    "userRatings": []
+  },
+  {
+    "id": 4,
+    "title": "new recipe",
+    "about": "so good and delicious",
+    "difficulty": "2",
+    "time": "2m",
+    "details": {
+      "ingredients": [
+        {
+          "name": "bread",
+          "type": "Essential",
+          "amount": "1 slice"
+        },
+        {
+          "name": "flour",
+          "type": "Alternatives",
+          "amount": "2 cups",
+          "Alternatives": [
+            {
+              "name": "gluten-free flour",
+              "amount": "2 cups"
+            },
+            {
+              "name": "whole wheat flour",
+              "amount": "2 cups"
+            }
+          ]
+        }
+      ],
+      "instructions": []
+    },
+    "userRatings": []
+  }
+]
