@@ -9,14 +9,14 @@ const Add = () => {
     difficulty: '',
     time: '',
     details: {
-      ingredients: [],
-      instructions: []
+      ingredients: [{ "name": '', "amount": '', "type": '' }],
+      instructions: [""]
     }
   });
 
   const [addedIngredients, setAddedIngredients] = useState([]);
   const [selectedType, setSelectedType] = useState(null);
-  const [showIngredientForm, setShowIngredientForm] = useState(false)
+  const [showIngredientForm, setShowIngredientForm] = useState(true)
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,6 +26,7 @@ const Add = () => {
     }));
   };
 
+  // handling adding ingredients and alternative ingredients
   const handleAddIngredient = () => {
     const ingredients = newRecipe.details.ingredients;
     
@@ -47,30 +48,31 @@ const Add = () => {
   const handleAddAltIngredient = (ingredientIndex) => {
     setSelectedType("Alternatives")
     setNewRecipe((prevState) => {
-        const updatedIngredients = [...prevState.details.ingredients];
-        const ingredientToUpdate = updatedIngredients[ingredientIndex];
 
-        if (!ingredientToUpdate.Alternatives) {
-            ingredientToUpdate.Alternatives = [];
-        }
-        ingredientToUpdate.type="Alternatives"
+      const updatedIngredients = [...prevState.details.ingredients];
+      const ingredientToUpdate = updatedIngredients[ingredientIndex];
 
-        // Check if the last alternative is empty before adding a new one
-        const lastAlternative = ingredientToUpdate.Alternatives[ingredientToUpdate.Alternatives.length - 1];
-        if (!lastAlternative || (lastAlternative.name && lastAlternative.amount)) {
-            // Add a new alternative ingredient with empty name and amount
-            ingredientToUpdate.Alternatives.push({ name: '', amount: '' });
-        }
+      if (!ingredientToUpdate.Alternatives) {
+        ingredientToUpdate.Alternatives = [];
+      }
+      ingredientToUpdate.type="Alternatives"
 
-        return {
-            ...prevState,
-            details: {
-                ...prevState.details,
-                ingredients: updatedIngredients,
-            },
-        };
+      // Check if the last alternative is empty before adding a new one
+      const lastAlternative = ingredientToUpdate.Alternatives[ingredientToUpdate.Alternatives.length - 1];
+      if (!lastAlternative || (lastAlternative.name && lastAlternative.amount)) {
+        // Add a new alternative ingredient with empty name and amount
+        ingredientToUpdate.Alternatives.push({ name: '', amount: '' });
+      }
+
+      return {
+        ...prevState,
+        details: {
+          ...prevState.details,
+          ingredients: updatedIngredients,
+        },
+      };
     });
-};
+  };
 
   const handleAltIngredientChange = (ingredientIndex, altIndex, fieldName, value) => {
 
@@ -95,28 +97,14 @@ const Add = () => {
     });
   };
 
-
-  const handleAddInstruction = () => {
-    setNewRecipe(prevState => ({
-      ...prevState,
-      details: {
-        ...prevState.details,
-        instructions: [...prevState.details.instructions, '']
-      }
-    }));
-  };
-
   const handleIngredientChange = (index, e) => {
-    // console.log(index, e.target)
     const { name, value } = e.target;
     const newValue = e.target.type === 'button' ? e.target.value : value;
     if (e.target.type === 'button')
     {
       setSelectedType(newValue);
-
     }
 
-    // console.log(name, newValue, selectedType)
     setNewRecipe(prevState => ({
       ...prevState,
       details: {
@@ -128,6 +116,7 @@ const Add = () => {
 
   const handleSaveIngredient = (index) => {
     const ingredientToAdd = newRecipe.details.ingredients[index];
+
     // Check if the ingredient to be added is not empty
     if (ingredientToAdd.name.trim() !== '' && ingredientToAdd.amount.trim() !== '') {
       setAddedIngredients(prevIngredients => [...prevIngredients, ingredientToAdd]);
@@ -141,8 +130,18 @@ const Add = () => {
         ingredients: prevState.details.ingredients.map((ingredient, i) => i === index ? { name: '', amount: '', type: ''} : ingredient)
       }
     }));
-    console.log(newRecipe.details.ingredients)
-    console.log(addedIngredients)
+    setSelectedType("none")
+  };
+
+  // instructions log 
+  const handleAddInstruction = () => {
+    setNewRecipe(prevState => ({
+      ...prevState,
+      details: {
+        ...prevState.details,
+        instructions: [...prevState.details.instructions, '']
+      }
+    }));
   };
 
   const handleInstructionChange = (index, value) => {
@@ -158,6 +157,7 @@ const Add = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      newRecipe.details.ingredients = addedIngredients;
       const response = await axios.post('http://localhost:5000/recipes', newRecipe);
       console.log('Recipe added successfully:', response.data);
       // Clear the form after successfully adding the recipe
@@ -171,6 +171,8 @@ const Add = () => {
           instructions: []
         }
       });
+      history.push('/');
+
     } catch (error) {
       console.error('Error adding recipe:', error);
     }
@@ -237,29 +239,42 @@ const Add = () => {
                 <button type="button" className={`${selectedType === 'Alternatives' ? 'ingredient-card-option-button-active' : 'ingredient-card-option-button'}`} name="type" value="Alternatives" onClick={() => handleAddAltIngredient(index)}>Alternatives</button>
               </div>
               
-              {ingredient.Alternatives && ingredient.Alternatives.map((alt, altIndex) => (
+              {ingredient.type === 'Alternatives' && ingredient.Alternatives && ingredient.Alternatives.map((alt, altIndex) => (
+                
                 <div key={`alt_${altIndex}`}>
-                  <input
-                    type="text"
-                    name={`alternativeName_${index}_${altIndex}`}
-                    value={alt.name}
-                    onChange={(e) => handleAltIngredientChange(index, altIndex, 'name', e.target.value)}
-                    placeholder='alternative ingredient name'
-                  />
-                  <input
-                    type="text"
-                    name={`alternativeAmount_${index}_${altIndex}`}
-                    value={alt.amount}
-                    onChange={(e) => handleAltIngredientChange(index, altIndex, 'amount', e.target.value)}
-                    placeholder='alternative ingredient amount'
-                  />
+                  {(altIndex === 0) && (
+                  <div >
+                    <span className='add-ingredient-alternatives-title'>Alternatives</span>
+                  </div>)}
+                  <div className='add-ingredient-card-input-row'>
+                    <span className='add-ingredient-alt-ing'>Ingredient</span>
+                    <input
+                      type="text"
+                      className='add-ingredient-input'
+                      name={`alternativeName_${index}_${altIndex}`}
+                      value={alt.name}
+                      onChange={(e) => handleAltIngredientChange(index, altIndex, 'name', e.target.value)}
+                      placeholder='alternative ingredient name'
+                    />
+                  </div>
+                  <div className='add-ingredient-card-input-row'>
+                    <span className='add-ingredient-alt-amo'>Amount</span>
+                    <input
+                      type="text"
+                      className='add-ingredient-input'
+                      name={`alternativeAmount_${index}_${altIndex}`}
+                      value={alt.amount}
+                      onChange={(e) => handleAltIngredientChange(index, altIndex, 'amount', e.target.value)}
+                      placeholder='alternative ingredient amount'
+                    />
+                  </div>
                   {altIndex === ingredient.Alternatives.length - 1 && ( // Display the button only for the last alternative
-                      <button type='button' onClick={() => handleAddAltIngredient(index)}>Add Alternative</button>
+                      <button type='button' className="add-alt-button" onClick={() => handleAddAltIngredient(index)}>Add Alternative</button>
                   )}
                 </div>
               ))}
 
-              <button type="button" onClick={() => handleSaveIngredient(index)}>Add Ingredient</button>
+              <button type="button" className="add-ingredient-button" onClick={() => handleSaveIngredient(index)}>Add Ingredient</button>
             </div>
           )))}
           {addedIngredients.length > 0 && (
@@ -277,7 +292,10 @@ const Add = () => {
           </div>
           
           {newRecipe.details.instructions.map((instruction, index) => (
-            <input key={index} type="text" value={instruction} onChange={(e) => handleInstructionChange(index, e.target.value)} />
+            <div key={index} className='post-instruction-card'>
+              <span className='post-instruction-index'>{index + 1}.</span>
+              <textarea className='post-instruction' type="text" value={instruction} onChange={(e) => handleInstructionChange(index, e.target.value)} placeholder='enter step here'/>
+            </div>
           ))}
         </div>
         
@@ -286,7 +304,7 @@ const Add = () => {
       
       
       
-      {/* <button type="submit">Add Recipe</button> */}
+      <button className="post-recipe-button" type="submit">Add Recipe</button>
     </form>
   );
 }

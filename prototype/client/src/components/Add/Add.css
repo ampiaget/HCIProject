@@ -229,7 +229,7 @@
     justify-content: center;
     align-items: center;
     padding: 8px 14px;
-    margin-right: 16px;
+    margin-right: 18px;
 
     background: #CC4425;
     border-radius: 8px;
@@ -270,4 +270,130 @@
     color: #FFFFFF;
     border: #000000;
 }
-  
+
+.add-ingredient-alternatives-title{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+
+    color: #000000;
+}
+
+.add-ingredient-alt-ing{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    color: #000000;
+    margin-right: 30px;
+}
+
+.add-ingredient-alt-amo{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    color: #000000;
+    margin-right: 50px;
+}
+
+.add-alt-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 4px 115px;
+    margin: 4px;
+    margin-left: 0px;
+    background: #3E4147;
+    border-radius: 8px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    border: none;
+}
+
+.add-ingredient-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px 117px;
+    margin: 4px;
+    margin-left: 0px;
+
+    background: #3E4147;
+    border-radius: 8px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    border: none;
+}
+
+.post-recipe-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 44px;
+    border: none;
+    margin: 44px 30px;
+    background: #CC4425;
+    border-radius: 8px;
+
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #FFFFFF;
+}
+
+.post-instruction-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    max-width: fit-content;
+
+}
+.post-instruction-index{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    
+    color: #CC4425;
+    padding-right: 8px;
+}
+
+.post-instruction {
+    padding: 12px 8px;
+    width: 200px;
+    min-height: 20px; /* Set a minimum height */
+    resize: vertical; /* Allow vertical resizing */
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    overflow-y: auto; /* Add a vertical scrollbar if needed */
+}
