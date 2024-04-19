@@ -45,6 +45,11 @@
     color: #363636;
 }
 
+.navbar-link.active {
+    /* Styles for active link */
+    text-decoration: underline;
+  }
+
 .navbar-logo {
     display: flex;
     align-items: center;

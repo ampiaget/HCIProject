@@ -135,17 +135,32 @@ const Add = () => {
       }));
       setSelectedType("none")
     }
+    else{
+      alert('Please confirm all fields are filled in and a type is selected.');
+      return;
+    }
   };
 
-  // instructions log 
+  // adding instructions
   const handleAddInstruction = () => {
-    setNewRecipe(prevState => ({
-      ...prevState,
-      details: {
-        ...prevState.details,
-        instructions: [...prevState.details.instructions, '']
-      }
-    }));
+    const instructions = newRecipe.details.instructions;
+    const lastInstruction = instructions[instructions.length - 1];
+    if (lastInstruction.trim() != '') {
+      // add new instruction if last is not empty
+      setNewRecipe(prevState => ({
+        ...prevState,
+        details: {
+          ...prevState.details,
+          instructions: [...prevState.details.instructions, '']
+        }
+      }));
+    }
+    else{
+      alert('Please fill in current instruction.');
+      return;
+    }
+
+    
   };
 
   const handleInstructionChange = (index, value) => {
@@ -253,6 +268,9 @@ const Add = () => {
                 <input className='add-ingredient-input' key={index} type="text" name="amount" value={ingredient.amount} onChange={(e) => handleIngredientChange(index, e)} placeholder='ingredient amount'/>
               </div>
               <div className='add-ingredient-card-input-row'>
+                <span className='add-ingredient-alternatives-title'>Ingredient Type</span>
+              </div>
+              <div className='add-ingredient-card-input-row'>
                 <button type="button" className={`${selectedType === 'Essential' ? 'ingredient-card-option-button-active' : 'ingredient-card-option-button'}`} name="type" value="Essential" onClick={(e) => handleIngredientChange(index, e)}>Essential</button>
                 <button type="button" className={`${selectedType === 'Optional' ? 'ingredient-card-option-button-active' : 'ingredient-card-option-button'}`} name="type" value="Optional" onClick={(e) => handleIngredientChange(index, e)}>Optional</button>
                 <button type="button" className={`${selectedType === 'Alternatives' ? 'ingredient-card-option-button-active' : 'ingredient-card-option-button'}`} name="type" value="Alternatives" onClick={() => handleAddAltIngredient(index)}>Alternatives</button>
@@ -293,7 +311,7 @@ const Add = () => {
                 </div>
               ))}
 
-              <button type="button" className="add-ingredient-button" onClick={() => handleSaveIngredient(index)}>Add Ingredient</button>
+              <button type="button" className="add-ingredient-button" onClick={() => handleSaveIngredient(index)}>Save Ingredient</button>
             </div>
           )))}
           {addedIngredients.length > 0 && (

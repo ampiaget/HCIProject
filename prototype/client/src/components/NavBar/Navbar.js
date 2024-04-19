@@ -1,9 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import chefHatImage from '../../assets/chefhat.png';
 import './Navbar.css'; 
 
 const Navbar = () => {
+    const location = useLocation();
+
     return (
         <nav className="navbar">
             <div className="navbar-left">
@@ -17,8 +19,8 @@ const Navbar = () => {
             <div className="navbar-right">
                 {/* the page links on the right */}
                 <ul className="navbar-links">
-                    <li><Link to="/" className="navbar-link">Home</Link></li>
-                    <li><Link to="/add" className="navbar-link">Post</Link></li>
+                    <li><Link to="/" className={`navbar-link ${location.pathname === '/' ? 'active' : ''}`}>Home</Link></li>
+                    <li><Link to="/add" className={`navbar-link ${location.pathname === '/add' ? 'active' : ''}`}>Post</Link></li>
                 </ul>
             </div>
         </nav>
