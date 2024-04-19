@@ -4,7 +4,7 @@
     "title": "Honey Sriracha Salmon",
     "about": "delicious dish",
     "difficulty": "4",
-    "time": "1h30m",
+    "time": "90",
     "details": {
       "ingredients": [
         {
@@ -60,7 +60,7 @@
     "title": "Seared Tuna Steaks",
     "about": "yummy dish",
     "difficulty": "5",
-    "time": "20m",
+    "time": "20",
     "details": {
       "ingredients": [
         {
@@ -108,7 +108,7 @@
     "title": "Stir-Fried Chicken and Vegetables",
     "about": "Quick and healthy stir-fry",
     "difficulty": "3",
-    "time": "30m",
+    "time": "30",
     "details": {
       "ingredients": [
         {
@@ -171,7 +171,7 @@
     "title": "new recipe",
     "about": "so good and delicious",
     "difficulty": "2",
-    "time": "2m",
+    "time": "2",
     "details": {
       "ingredients": [
         {

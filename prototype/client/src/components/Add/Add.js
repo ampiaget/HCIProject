@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios'; // Import axios for making HTTP requests
 import IngredientCard from '../IngredientCard/IngredientCard';
 import './Add.css'
 
 const Add = () => {
+  const navigate = useNavigate();
+
   const [newRecipe, setNewRecipe] = useState({
     title: '',
     difficulty: '',
@@ -32,7 +35,7 @@ const Add = () => {
     
     // Check if the last ingredient is empty
     const lastIngredient = ingredients[ingredients.length - 1];
-    if (!lastIngredient || (lastIngredient.name.trim() !== '' && lastIngredient.amount.trim() !== '')) {
+    if (!lastIngredient || (lastIngredient.name.trim() !== '' && lastIngredient.amount.trim() !== '' && lastIngredient.type.trim() !== '')) {
       // Add a new ingredient only if the last one is not empty
       setNewRecipe(prevState => ({
         ...prevState,
@@ -118,19 +121,20 @@ const Add = () => {
     const ingredientToAdd = newRecipe.details.ingredients[index];
 
     // Check if the ingredient to be added is not empty
-    if (ingredientToAdd.name.trim() !== '' && ingredientToAdd.amount.trim() !== '') {
+    if (ingredientToAdd.name.trim() !== '' && ingredientToAdd.amount.trim() !== '' && ingredientToAdd.type.trim() != '') {
       setAddedIngredients(prevIngredients => [...prevIngredients, ingredientToAdd]);
       setShowIngredientForm(false);
+
+        // Clear the input fields after adding the ingredient
+      setNewRecipe(prevState => ({
+        ...prevState,
+        details: {
+          ...prevState.details,
+          ingredients: prevState.details.ingredients.map((ingredient, i) => i === index ? { name: '', amount: '', type: ''} : ingredient)
+        }
+      }));
+      setSelectedType("none")
     }
-    // Clear the input fields after adding the ingredient
-    setNewRecipe(prevState => ({
-      ...prevState,
-      details: {
-        ...prevState.details,
-        ingredients: prevState.details.ingredients.map((ingredient, i) => i === index ? { name: '', amount: '', type: ''} : ingredient)
-      }
-    }));
-    setSelectedType("none")
   };
 
   // instructions log 
@@ -156,10 +160,25 @@ const Add = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    newRecipe.details.ingredients = addedIngredients;
+      // Perform validation
+    if (
+      newRecipe.title.trim() === '' ||
+      newRecipe.difficulty.trim() === '' ||
+      newRecipe.time.trim() === '' ||
+      newRecipe.about.trim() === '' ||
+      newRecipe.details.ingredients.length === 0 ||
+      newRecipe.details.instructions.some(instruction => instruction.trim() === '')
+    ) {
+      // If any field is blank, display an error message and return early
+      alert('Please fill in all fields.');
+      return;
+    }
     try {
-      newRecipe.details.ingredients = addedIngredients;
+      
       const response = await axios.post('http://localhost:5000/recipes', newRecipe);
       console.log('Recipe added successfully:', response.data);
+
       // Clear the form after successfully adding the recipe
       setNewRecipe({
         title: '',
@@ -171,7 +190,7 @@ const Add = () => {
           instructions: []
         }
       });
-      history.push('/');
+      navigate('/', { state: { newRecipe: response.data } });
 
     } catch (error) {
       console.error('Error adding recipe:', error);
