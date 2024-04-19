@@ -93,6 +93,29 @@ const Home = () => {
         }
     };
 
+    const parseInstruction = (instruction, ingredients) => {
+        const words = instruction.split(/(\s+)/); // split by whitespace but preserve whitespace characters
+    
+        return words.map((word, index) => {
+            // Check if the word matches any ingredient name
+            const isIngredient = ingredients.some((ingredient) =>
+                ingredient.name.toLowerCase().includes(word.toLowerCase().trim()) // trim the word to remove leading/trailing whitespace
+            );
+    
+            if (word === " ")
+            {
+                return <span key={index}>&nbsp;</span>
+            }
+    
+            if (isIngredient) {
+                
+                return <strong key={index}>{word}</strong>; // ingredient words are bolded
+            }
+
+            return <span key={index}>{word}</span>; // regular words
+        });
+    };
+
     return (
         <div className='homepage'>
 
@@ -140,7 +163,6 @@ const Home = () => {
                     {/* I made it button */}
                     <div>
                         <button className='made-it-button' onClick={handleOpenModal}>I made it!</button>
-                        {/* {isModalOpen && <RateItModal onClose={handleCloseModal} />} */}
                         {isModalOpen && <RateItModal onClose={handleCloseModal} selectedRecipeId={selectedRecipe.id} onRatingSubmit={handleRatingSubmit} />}
 
                     </div>
@@ -164,15 +186,15 @@ const Home = () => {
                 <div>
                     <span className='recipe-card-section'>Recipe</span>
                 </div>
-                <ul>
+                <div>
                     {selectedRecipe.details.instructions && selectedRecipe.details.instructions.map((instruction, index) => (
                         <div key={index} className='recipe-card-instruction-card'>
                             <span className='recipe-card-instruction-index'>{index + 1}.</span> 
-                            <span className='recipe-card-instruction'>{instruction}</span>
+                            <span className='recipe-card-instruction'>{parseInstruction(instruction, selectedRecipe.details.ingredients)}</span>
                         </div>
                        
                     ))}
-                </ul>
+                </div>
             </div>
             }
             </div>
