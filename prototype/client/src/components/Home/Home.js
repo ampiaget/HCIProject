@@ -19,7 +19,7 @@ const Home = () => {
 
     // if coming from post then set the new recipe as selected
     useEffect(() => {
-        if (location.state && location.state.newRecipe) {
+        if (location.state && location.state.newRecipe) { //Forcing lowercase on all searches
             setSelectedRecipe(location.state.newRecipe);
         }
     }, [location.state]);
