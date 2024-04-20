@@ -11,6 +11,11 @@ const Home = () => {
     const location = useLocation();
     const [recipes, setRecipes] = useState([]);
     const [selectedRecipe, setSelectedRecipe] = useState(null);
+    const [searchTerm, setSearchTerm] = useState('');
+    const handleSearch = (term) => {setSearchTerm(term.toLowerCase());}
+    {/*const handleClearSearch = () => {setSearchTerm('');}  Something in here is broken. Not clearing the text only the the search value*/}
+    const [selectedDifficulty, setSelectedDifficulty] = useState('');
+    const handleDifficultyChange = (difficulty) => {setSelectedDifficulty(difficulty);}
 
     // if coming from post then set the new recipe as selected
     useEffect(() => {
@@ -121,10 +126,23 @@ const Home = () => {
 
             {/* Left Pane */}
             <div className='homepage-left'>
-                <h2>Search bar here**</h2>
+                <div className='homepage-search'>
+                    <input type="text" className='search-input' placeholder="Search Recipes..." onChange={(e) => handleSearch(e.target.value)} />
+                    {/*<button className='clear-button' onClick={handleClearSearch}>Clear</button> Something in here is broken. Not clearing the text*/}
+                    <select className='difficulty-dropdown' onChange={(e) => handleDifficultyChange(e.target.value)}>
+                        <option value="">All Difficulties</option>
+                        {[...Array(10).keys()].map((difficulty) => (
+                        <option key={difficulty + 1} value={difficulty + 1}>{difficulty + 1}</option>
+                        ))}
+                    </select>
+                </div>
 
                 {/* Card Container */}
-                {recipes.map((recipe) => (
+                {/* {recipes.map((recipe) => ( */}
+                {recipes.filter((recipe) => 
+                    (searchTerm === '' || recipe.title.toLowerCase().includes(searchTerm)) &&  // Search by recipe title
+                    (!selectedDifficulty || parseInt(recipe.difficulty) <= parseInt(selectedDifficulty)) // Filter by difficulty (if selected)
+                ).map((recipe) => (
                     <div key={recipe.id}> 
                         <div className='recipelist-card' onClick={() => handleSelection(recipe)}>
                             <div className='recipelist-card-left'>
