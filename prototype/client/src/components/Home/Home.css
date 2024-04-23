@@ -10,6 +10,29 @@
     overflow-y: auto;
 }
 
+.search-input{
+    width: 90%;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: solid;
+    border-width: 1px;
+}
+
+.difficulty-dropdown{
+    margin-bottom: 5px;
+    border: solid;
+    border-radius: 10px;
+    border-color: #000;
+    border-width: 1px;
+    background-color: #FFF;
+    padding: 5px;
+    width: 25%;
+    /*text-align: center;*/
+    padding-left: 5%;
+    color: #808080;
+}
+
 .recipelist-card{
     position: relative;
     display:flex;
