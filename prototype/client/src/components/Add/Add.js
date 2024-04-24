@@ -42,16 +42,16 @@ const Add = () => {
     
     // Check if the last ingredient is empty
     const lastIngredient = ingredients[ingredients.length - 1];
-    if (!lastIngredient || (lastIngredient.name.trim() !== '' && lastIngredient.amount.trim() !== '' && lastIngredient.type.trim() !== '')) {
-      // Add a new ingredient only if the last one is not empty
-      setNewRecipe(prevState => ({
-        ...prevState,
-        details: {
-          ...prevState.details,
-          ingredients: [...prevState.details.ingredients, { name: '', amount: '', type: '' }]
-        }
-      }));
-    }
+    // if (!lastIngredient || (lastIngredient.name.trim() !== '' && lastIngredient.amount.trim() !== '' && lastIngredient.type.trim() !== '')) {
+    //   // Add a new ingredient only if the last one is not empty
+    //   setNewRecipe(prevState => ({
+    //     ...prevState,
+    //     details: {
+    //       ...prevState.details,
+    //       ingredients: [...prevState.details.ingredients, { name: '', amount: '', type: '' }]
+    //     }
+    //   }));
+    // }
     setShowIngredientForm(true);
   };
 
