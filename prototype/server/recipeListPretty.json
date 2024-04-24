@@ -93,454 +93,650 @@
     "about": "A spin on arroz con pollo (“rice with chicken”) is just another entry into the upper echelon of iconic duos. Ready in just 30 minutes, you’ll season and sizzle chicken thighs with smoky paprika, then arrange them on a bed of fluffy rice tinged with earthy turmeric and dotted with peas. Piquant pickled red onions and fragrant cilantro add further pops of freshness to this hearty, classic meal. Serving amount is 2 dishes.",
     "id": 1,
     "image": {
+      "filename": "recipe_1.jpeg",
+      "type": "image/jpeg"
+    }
+  },
+  {
+    "title": "Garlicky Fried Chicken Sandwiches",
+    "difficulty": "6",
+    "time": "35",
+    "details": {
+      "ingredients": [
+        {
+          "name": "Carrots",
+          "amount": "12 oz",
+          "type": "Alternatives",
+          "Alternatives": [
+            {
+              "name": "Asparagus",
+              "amount": "6 oz"
+            }
+          ]
+        },
+        {
+          "name": "Potato Buns",
+          "amount": "2 pairs",
+          "type": "Essential"
+        },
+        {
+          "name": "Panko Breadcrumbs",
+          "amount": "1/2 cup",
+          "type": "Essential"
+        },
+        {
+          "name": "Garlic Powder",
+          "amount": "1 tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Chicken Cutlets",
+          "amount": "10 oz",
+          "type": "Essential"
+        },
+        {
+          "name": "Sour Cream",
+          "amount": "1 1/2 tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Mayonnaise",
+          "amount": "2 tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Honey Dijon Dressing",
+          "amount": "1.5 oz",
+          "type": "Essential"
+        },
+        {
+          "name": "Hot Sauce",
+          "amount": "1 tsp",
+          "type": "Optional"
+        },
+        {
+          "name": "Olive Oil",
+          "amount": "2 tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Cooking Oil",
+          "type": "Essential"
+        },
+        {
+          "name": "Salt",
+          "type": "Essential"
+        },
+        {
+          "name": "Pepper",
+          "type": "Essential"
+        }
+      ],
+      "instructions": [
+        "Adjust rack to top position and preheat oven to 425 degrees. Wash and dry produce. • Trim, peel, and cut carrots into sticks (like fries; ours were 3 inches long and 1/3 inch thick). Halve buns. • In a shallow dish, combine panko, garlic powder, salt (we used 1 tsp; 2 tsp for 4 servings), and pepper. For asparagus, trim and discard woody bottom ends.",
+        "Toss carrots, or asparagus, on a baking sheet with a large drizzle of olive oil. Season generously with salt and pepper. • Roast on top rack until tender, 15-20 minutes.",
+        "Pat chicken dry with paper towels; place between two large pieces of plastic wrap. Pound with a mallet or rolling pin until chicken is about ½ inch thick. Season all over with salt and pepper. • Brush chicken all over with sour cream. Working one piece at a time, press chicken into panko mixture until fully coated on both sides.",
+        "Heat a 1/3-inch layer of oil in a large, heavy-bottomed pan over medium-high heat. Once oil is hot enough that a pinch of panko mixture sizzles when added to the pan, add coated chicken. Cook until crust is golden brown and chicken is cooked through, 3-5 minutes per side. (TIP: Fry in batches if necessary; lower heat if chicken begins to brown too quickly.) Transfer chicken to a paper-towel-lined plate.",
+        " In a small bowl, whisk together mayonnaise, honey Dijon dressing, and hot sauce to taste (we used the whole packet). Season with salt and pepper. • Toast buns until golden brown.",
+        "Spread top buns with as much honey mustard mayo as you like. Fill buns with chicken. • Divide sandwiches and carrots, or asparagus, between plates. Serve with any remaining honey mustard mayo on the side for dipping."
+      ]
+    },
+    "about": "Think you need a fancy meal to really treat your tastebuds? These fried chicken sandwiches beg to differ! Chicken cutlets are spread with sour cream, coated in garlicky panko, and fried until golden and crispy. Toasted buns are stuffed with chicken and a layer of spicy honey-mustard mayo, and the rest of that tangy-sweet dipper is served on the side with roasted carrot fries. It’s casual, downhome comfort food at its finger lickin’ finest!",
+    "id": 2,
+    "image": {
+      "filename": "recipe_2.jpeg",
+      "type": "image/jpeg"
+    }
+  },
+  {
+    "title": "Creamy Dil Pork Filet",
+    "difficulty": "3",
+    "time": "35",
+    "details": {
+      "ingredients": [
+        {
+          "name": "Green Beans",
+          "amount": "6 oz",
+          "type": "Essential"
+        },
+        {
+          "name": "Dill",
+          "amount": "1/4 oz",
+          "type": "Optional"
+        },
+        {
+          "name": "Pork Fillet",
+          "amount": "2 fillets, 5 oz each",
+          "type": "Alternatives",
+          "Alternatives": [
+            {
+              "name": "Chicken Cutlets",
+              "amount": "2 cutlets, 5 oz each"
+            }
+          ]
+        },
+        {
+          "name": "Chili Flakes",
+          "amount": "1 tsp",
+          "type": "Optional"
+        },
+        {
+          "name": "Couscous",
+          "amount": "2.5 oz",
+          "type": "Essential"
+        },
+        {
+          "name": "Chicken Stock Concentrates",
+          "amount": "2 tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Sour Cream",
+          "amount": "3 tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Dijon Mustard",
+          "amount": "2 tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Salt",
+          "amount": "1",
+          "type": "Essential"
+        },
+        {
+          "name": "Pepper",
+          "amount": "1",
+          "type": "Essential"
+        },
+        {
+          "name": "Olive Oil",
+          "amount": "1 tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "type": "Essential"
+        }
+      ],
+      "instructions": [
+        "Adjust rack to top position and preheat oven to 425 degrees. Line a baking sheet with foil. Wash and dry produce. • Trim green beans if necessary. Pick and roughly chop fronds from dill.",
+        "Pat pork dry with paper towels; season generously with salt and pepper. • Heat a large drizzle of olive oil in a large pan over medium-high heat. Add pork and sear, turning occasionally, until browned all over, 4-8 minutes (it’ll finish cooking in the next step). • Turn off heat; transfer pork to one side of prepared baking sheet.\r\n\r\nSwap in chicken for pork. Cook until browned and cooked through 3-5 minutes per side. Transfer to a cutting board to rest.",
+        "Add green beans to empty side of baking sheet; toss with a drizzle of olive oil, salt, pepper, and chili flakes to taste. • Roast on top rack until green beans are tender and pork is cooked through, 12-15 minutes. • Remove from oven; transfer pork to a cutting board to rest for 5 minutes.\r\n\r\nIf using chicken, don't put in over. Spread green beans out across entire sheet; roast as instructed.",
+        "Meanwhile, add couscous and 1 TBSP butter (2 TBSP for 4 servings) to a small pot over medium-high heat. Cook, stirring, until butter has melted and couscous is lightly toasted, 2-3 minutes. • Add ¾ cup water (1½ cups for 4), half the stock concentrates (you’ll use more in the next step), and a big pinch of salt. Bring to a boil, then cover and reduce to a low simmer. Cook until couscous is tender, 6-8 minutes. TIP: Drain excess water if necessary. • Keep covered off heat until ready to serve.",
+        "While couscous cooks, heat pan used for pork over medium-high heat. Add remaining stock concentrate and ¼ cup water (1/3 cup for 4 servings); bring to a simmer and cook 1-2 minutes. • Reduce heat to low and whisk in sour cream, half the chopped dill, and mustard to taste. Turn off heat. Stir in 1 TBSP butter (2 TBSP for 4) and any resting juices from pork. Season with salt and pepper.",
+        "Fluff couscous with a fork and season with salt and pepper. • Slice pork crosswise. • Divide couscous, pork, and green beans between plates. Spoon sauce over pork and sprinkle with remaining chopped dill and any remaining chili flakes to taste. Serve."
+      ]
+    },
+    "about": "Serves 2. Another work day, another dinner daydream. You know what we mean. You’re sitting at your desk and 2:00 p.m. rolls around. Suddenly, all you can think is, “Dinner...what the heck am I going to eat for dinner?!” Well, we’ve got you covered, and FYI, the answer to that question is pretty darn delicious. We’re serving up succulent pork tenderloin with roasted green beans and savory couscous. To finish things off, the pork is drizzled with a life-affirming creamy dill sauce. Talk about a dream come true!",
+    "id": 3,
+    "image": {
+      "filename": "recipe_3.jpeg",
+      "type": "image/jpeg"
+    }
+  },
+  {
+    "title": "Honey Thyme Pork Filet",
+    "difficulty": "4",
+    "time": "40",
+    "details": {
+      "ingredients": [
+        {
+          "name": "Potatoes",
+          "amount": "12 oz",
+          "type": "Essential"
+        },
+        {
+          "name": "Garlic",
+          "amount": "1 clove",
+          "type": "Essential"
+        },
+        {
+          "name": "Dried Thyme",
+          "amount": "1 tsp",
+          "type": "Optional"
+        },
+        {
+          "name": "Honey",
+          "amount": "2 tsp",
+          "type": "Optional"
+        },
+        {
+          "name": "Pork Filet",
+          "amount": "2 filets, 5 oz each",
+          "type": "Alternatives",
+          "Alternatives": [
+            {
+              "name": "Chicken Cutlets",
+              "amount": "2 cutlets, 5 oz each"
+            }
+          ]
+        },
+        {
+          "name": "Broccoli",
+          "amount": "8 oz",
+          "type": "Essential"
+        },
+        {
+          "name": "Chicken Stock Concentrate",
+          "amount": "2 tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Salt",
+          "amount": "1",
+          "type": "Essential"
+        },
+        {
+          "name": "Pepper",
+          "amount": "1",
+          "type": "Essential"
+        },
+        {
+          "name": "Cooking Oil",
+          "amount": "1 tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Olive Oil",
+          "amount": "1 tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Butter",
+          "amount": "1 tbsp",
+          "type": "Essential"
+        }
+      ],
+      "instructions": [
+        "Adjust racks to top and middle positions and preheat oven to 450 degrees. Wash and dry produce. • Dice potatoes into 1⁄2-inch pieces. Toss on a baking sheet with a drizzle of oil, salt, and pepper. • Roast on top rack, tossing halfway through, until lightly browned and tender, 20-25 minutes.",
+        "While potatoes roast, pat pork dry with paper towels; season all over with salt and pepper. • Heat a drizzle of oil in a large pan over medium heat. Add pork and sear, turning occasionally, until browned all over, 4-8 minutes. • Meanwhile, peel and mince half the garlic (all for 4 servings). • Once pork is browned, transfer to one side of a second baking sheet.\r\n\r\nSwap in chicken for pork. Cook until browned and cooked through, 3-5 minutes per side. Transfer to a cutting board and tent with foil to keep warm. Don't transfer chicken to baking sheet.",
+        "Cut broccoli into bite-size pieces if necessary. Toss with a drizzle of olive oil and a pinch of salt and pepper on opposite side of baking sheet from pork.\r\n\r\nIf not using pork, spread broccoli out across entire baking sheet.",
+        "Transfer sheet with pork and broccoli to middle rack; roast until pork is cooked through and broccoli is tender, 12-15 minutes. • Once pork is done, transfer to a cutting board to rest. Thinly slice crosswise.",
+        "Heat a drizzle of oil in pan used for pork over medium heat. Add minced garlic and thyme; cook until fragrant, 30 seconds. • Stir in stock concentrates, honey, and 1⁄4 cup water (1/3 cup for 4 servings). Simmer, scraping up any browned bits from bottom of pan, until sauce has reduced and thickened, 2-3 minutes. • Stir in 1 TBSP butter (2 TBSP for 4) until melted. Season with salt and pepper. TIP: If sauce seems too thick, stir in a splash or two of water.",
+        "Divide pork, or chicken, broccoli, and potatoes between plates. Drizzle pork or chicken with sauce and serve."
+      ]
+    },
+    "about": "Serves 2. A honey-based sauce may sound like something that goes with dessert, but mild-tasting pork loves a sweet sauce too, especially one that has a few savory elements added to the mix. In this recipe, you’ll be folding an extra-large drizzle of honey into a rich, savory pan sauce, then spooning it onto pork tenderloin. (We recommend spooning it on the roasted potatoes and side of green beans, too!)",
+    "id": 4,
+    "image": {
       "filename": "recipe_4.jpeg",
       "type": "image/jpeg"
     }
   },
   {
-    "title": "6 minute seared Ahi Tuna Steaks",
+    "title": "Pork Sausage Rigatoni Rosa",
     "difficulty": "3",
-    "time": "30",
-    "details": {
-      "ingredients": [
-        {
-          "name": "Ahi Tuna Steaks",
-          "amount": "2",
-          "type": "Essential"
-        },
-        {
-          "name": "Soy Sauce",
-          "amount": "2 Tbsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Toasted Sesame Oil",
-          "amount": "1 tbsp",
-          "type": "Optional"
-        },
-        {
-          "name": "Honey",
-          "amount": "1 tbsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Kosher Salt",
-          "amount": "1/4 tsp",
-          "type": "Optional"
-        },
-        {
-          "name": "Black Pepper",
-          "amount": "1/4 Tsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Cayenne Pepper",
-          "amount": "1/4 teaspoon",
-          "type": "Essential"
-        },
-        {
-          "name": "Green Onions",
-          "amount": "To taste",
-          "type": "Optional"
-        },
-        {
-          "name": "Toasted Sesame Seeds",
-          "amount": "To taste",
-          "type": "Optional"
-        },
-        {
-          "name": "Lime Wedges",
-          "amount": "To Taste",
-          "type": "Optional"
-        }
-      ],
-      "instructions": [
-        "Pat Ahi Tuna Steaks dry",
-        "Mix Soy Sauce, Toasted Sesame Oil, Honey, Kosher Salt (If desired), Black Pepper, and Cayenne Pepper",
-        "Mix until the honey is fully dissolved",
-        "Marinate the Tuna for as little as 15 min up to overnight",
-        "Preheat a skillet on medium-high heat",
-        "Add canola oil (Any neutral oil will do) the pan",
-        "Sear Tuna Steaks for 1 - 1.75 minutes per side depending on how done you like your tuna"
-      ]
-    },
-    "about": "A quick and easy dinner recipe that pairs great with rice! You can even save the marinade from the tuna and drizzle it onto the rice for added flavor for your entire meal. /n/n There is always a risk when consuming raw or undercooked fish.  Tuna is normally served 'rare' or 'medium-rare' but this does not mean there is zero risk. ",
-    "id": 2,
-    "image": {
-      "filename": "",
-      "type": ""
-    }
-  },
-  {
-    "title": "Jo Mama's Spaghetti",
-    "difficulty": "6",
-    "time": "300",
-    "details": {
-      "ingredients": [
-        {
-          "name": "Italian Sausage, Casing removed (Mild or Hot)",
-          "amount": "2 Lbs",
-          "type": "Essential"
-        },
-        {
-          "name": "Small Onion, Chopped",
-          "amount": "1",
-          "type": "Optional"
-        },
-        {
-          "name": "Garlic Cloves, Minced",
-          "amount": "3-4",
-          "type": "Essential"
-        },
-        {
-          "name": "Diced Tomatoes",
-          "amount": "1 28oz Can",
-          "type": "Optional"
-        },
-        {
-          "name": "Toamto Paste",
-          "amount": "2 6oz cans",
-          "type": "Essential"
-        },
-        {
-          "name": "Tomato Sauce",
-          "amount": "2 15oz cans",
-          "type": "Essential"
-        },
-        {
-          "name": "Water",
-          "amount": "2 Cups",
-          "type": "Essential"
-        },
-        {
-          "name": "Basil",
-          "amount": "3 Tsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Dried Parsley Flakes",
-          "amount": "2 Tsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Brown Sugar",
-          "amount": "1.5 Tsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 Tsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Fresh Ground Black Pepper",
-          "amount": ".25 Tsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Red Wine (Cabernet Works Great!)",
-          "amount": ".25 Cup",
-          "type": "Optional"
-        }
-      ],
-      "instructions": [
-        "In large stockpot brown italian sausage, breaking it apart as you stir",
-        "Add onions and continue cooking, stirring occasionally until onions are soft",
-        "Add garlic, tomatoes, tomato paste, tomato sauce, and water. Stir until mostly combined",
-        "Add basil, parsley, brown sugar, salt, crushed red pepper flakes, and black pepper",
-        "Stir well to combine, bring to a boil",
-        "If using Red Wine, stir in now",
-        "Reduce burner temperature until sauce is at a low simmer, stirring frequently for at least 1 hour. Here a longer simmer means more flavor and a better sauce, be careful not to let it burn",
-        "When sauce is ready cook spaghetti noodles according the instructions on the box",
-        "Sppon sauce over drained spaghetti noodles"
-      ]
-    },
-    "about": "The difficulty in this recipe is more a function of how long it takes for a good simmer which means a long time watching and stirring the sauce. My kids will give up a steak dinner for this spaghetti. It is a recipe I have been perfecting for years and it is so good (if I may humbly say) that my kids are disappointed when they eat spaghetti anywhere else but home! ",
-    "id": 3,
-    "image": {
-      "filename": "",
-      "type": ""
-    }
-  },
-  {
-    "title": "Tteokbokki (Korean Spicy Rice Cake)",
-    "difficulty": "5",
-    "time": "40",
-    "details": {
-      "ingredients": [
-        {
-          "name": "Tteokbokki tteok (Rice Cake)",
-          "amount": "1 Lb",
-          "type": "Essential"
-        },
-        {
-          "name": "Eomuk (Fish cake) sheets",
-          "amount": "2",
-          "type": "Essential"
-        },
-        {
-          "name": "Yangbaechu (Green Cabbage)",
-          "amount": "4oz",
-          "type": "Optional"
-        },
-        {
-          "name": "Scallions",
-          "amount": "2",
-          "type": "Optional"
-        },
-        {
-          "name": "Minced Garlic",
-          "amount": "1 Tbsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Anchovy Broth or Water",
-          "amount": "4 Cups",
-          "type": "Essential"
-        },
-        {
-          "name": "Gochujang",
-          "amount": "3 Tbsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Gochugaru",
-          "amount": "3 Tsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Soy Sauce",
-          "amount": "1 Tbsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Sugar",
-          "amount": "2 Tbsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Corn Syrup",
-          "amount": "1 Tbsp",
-          "type": "Optional"
-        }
-      ],
-      "instructions": [
-        "Soak the Rice cakes for about 20 minutes",
-        "Cut the fish cake, scallions, and cabbage into approximately 2 inch long pieces",
-        "In a large pan add the Anchocy Broth, Gochujang, Gochugaru, Soy Sauce, Sugar, and Corn Syrup",
-        "Stir to combine the ingredients until the Gochugaru has completely dissolved.",
-        "Add the rice cakes, bring to a boil and cook for 8-10 minutes. Stir frequently to prevent sticking",
-        "Drop in the fish cake, scallions, and cabbage and stir for another 4-6 minutes",
-        "When rice cakes are soft and the sauce is nice and thick remove from heat and server"
-      ]
-    },
-    "about": "Literally translated as “stir-fried rice cake,” tteokbokki (떡볶이) is a beloved Korean rice cake dish with many variations and a rich history.  It’s also spelled ddukbokki, ddeokbokki, dukbokki or topokki. This spicy rice cake dish is enormously popular as a street food and also often enjoyed at home. Unlike gungjung tteokbokki, which has been around for hundreds of years, the red spicy tteokbokki has a relatively short history. It was developed in 1953, the year the Korean War ended, by a woman named Ma Bok-rim in the Sindang-dong neighborhood in Seoul. The chewy rice cake in a spicy gochujang sauce instantly became popular as an affordable comfort snack.",
-    "id": 4,
-    "image": {
-      "filename": "",
-      "type": ""
-    }
-  },
-  {
-    "title": "Honey Sriracha Oven Baked Salmon",
-    "difficulty": "4",
-    "time": "35",
-    "details": {
-      "ingredients": [
-        {
-          "name": "Skin on Salmon",
-          "amount": "1 Lb",
-          "type": "Essential"
-        },
-        {
-          "name": "Neutral Oil (Canola, Vegetable, etc)",
-          "amount": "1 Tbsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Minced Garlic",
-          "amount": "1 Clove",
-          "type": "Essential"
-        },
-        {
-          "name": "Sriracha Sauce",
-          "amount": "2 Tbsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Soy Sauce",
-          "amount": "1 Tbsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Honey",
-          "amount": "1.5 Tbsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Rice Vinegar",
-          "amount": "1 Tbsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Sesame Oil",
-          "amount": "1 Tsp",
-          "type": "Optional"
-        },
-        {
-          "name": "Sesame Seeds",
-          "amount": "1 Tbsp",
-          "type": "Optional"
-        }
-      ],
-      "instructions": [
-        "Preheat Oven to 425 F",
-        "Line a cooking tray with Aluminum foil and lay salmon skin side down",
-        "Season salmon with Kosher Salt and Fresh Black Pepper",
-        "Place salmon into oven and cook for 10 minutes",
-        "in a pot add the Neutral Oil, Garlic, Sriracha, Soy Sauce, Honey, and Rice Vinegar",
-        "Bring sauce to a boil then lower heat to low simmer",
-        "Cook for 8-10 minutes or until sauce has thickened",
-        "Take salmon out of the oven and brush it with the sauce",
-        "Bake salmon once more for an additional 8-10 minutes"
-      ]
-    },
-    "about": "Literally translated as “stir-fried rice cake,” tteokbokki (떡볶이) is a beloved Korean rice cake dish with many variations and a rich history.  It’s also spelled ddukbokki, ddeokbokki, dukbokki or topokki. This spicy rice cake dish is enormously popular as a street food and also often enjoyed at home. Unlike gungjung tteokbokki, which has been around for hundreds of years, the red spicy tteokbokki has a relatively short history. It was developed in 1953, the year the Korean War ended, by a woman named Ma Bok-rim in the Sindang-dong neighborhood in Seoul. The chewy rice cake in a spicy gochujang sauce instantly became popular as an affordable comfort snack.",
-    "id": 4,
-    "image": {
-      "filename": "",
-      "type": ""
-    }
-  },
-  {
-    "title": "Buttery Baked Salmon",
-    "difficulty": "4",
     "time": "25",
     "details": {
       "ingredients": [
         {
-          "name": "Skinless Salmon Filets",
-          "amount": "4",
+          "name": "Rigatoni Pasta",
+          "amount": "6 oz",
           "type": "Essential"
         },
         {
-          "name": "Salted Butter",
-          "amount": "4 Tbsp",
+          "name": "Zucchini",
+          "amount": "1 unit",
+          "type": "Essential"
+        },
+        {
+          "name": "Garlic",
+          "amount": "1 clove",
+          "type": "Essential"
+        },
+        {
+          "name": "Italian Pork Sausage",
+          "amount": "9 oz",
+          "type": "Alternatives",
+          "Alternatives": [
+            {
+              "name": "Chopped Chicken Breast",
+              "amount": "10 oz"
+            },
+            {
+              "name": "Italian Chicken Sausage",
+              "amount": "9 oz"
+            }
+          ]
+        },
+        {
+          "name": "Tomato Paste",
+          "amount": "3 oz",
+          "type": "Essential"
+        },
+        {
+          "name": "Cream Cheese",
+          "amount": "4 tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Chicken Stock Concentrate",
+          "amount": "1 tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Chili Flakes",
+          "amount": "1 tsp",
+          "type": "Optional"
+        },
+        {
+          "name": "Parmesan Cheese",
+          "amount": "6 tbsp",
+          "type": "Optional"
+        },
+        {
+          "name": "Salt",
+          "amount": "1",
+          "type": "Essential"
+        },
+        {
+          "name": "Pepper",
+          "amount": "1",
+          "type": "Essential"
+        },
+        {
+          "name": "Cooking Oil",
+          "amount": "2 tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 tsp",
+          "type": "Optional"
+        },
+        {
+          "name": "Butter",
+          "amount": "1 tbsp",
+          "type": "Essential"
+        }
+      ],
+      "instructions": [
+        "Wash and dry produce. • Bring a large pot of salted water to a boil. Once water is boiling, add rigatoni; cook, stirring occasionally, until al dente, 9-11 minutes. • Reserve 1 cup pasta cooking water (1½ cups for 4 servings), then drain and set aside. • Meanwhile, trim and halve zucchini lengthwise; slice crosswise into ¼-inch-thick half-moons. Peel and mince or grate garlic.",
+        "While pasta cooks, heat a drizzle of oil in a large pan over medium-high heat. Add zucchini; season with salt and pepper. Cook, stirring occasionally, until browned and tender, 5-6 minutes. Remove pan from heat; transfer zucchini to a plate. • Remove sausage from casing if necessary; discard casing.  Heat another drizzle of oil in same pan over medium-high heat. Add sausage to pan and cook, breaking up meat into pieces, until almost cooked through, 3-4 minutes (it’ll finish cooking in the next step).\r\n\r\nIf using chicken, open package of chicken and drain off any excess liquid. Season with salt and pepper. Cook through this step as instructed, swapping in chicken or chicken sausage.",
+        "Stir garlic and tomato paste into pan with sausage; cook until garlic is fragrant, tomato paste is well distributed, and sausage is fully cooked, 1-2 minutes. • Stir in cream cheese, stock concentrate, ½ cup reserved pasta cooking water (ladle straight from the pot if pasta hasn’t finished cooking yet), 1 TBSP butter, ½ tsp sugar, and a pinch of chili flakes to taste. (For 4 servings, use ¾ cup pasta cooking water, 2 TBSP butter, and 1 tsp sugar.) Remove from heat.",
+        "Add drained rigatoni and zucchini to pan with sauce. Stir in half the Parmesan. Season with salt and pepper to taste. TIP: If needed, stir in more reserved pasta cooking water a splash at a time until pasta is coated in a creamy sauce. • Divide between bowls; top with remaining Parmesan and serve."
+      ]
+    },
+    "about": "Serves 2. Fun fact: “Rosa” means “pink” in Italian. For our chefs’ version of rigatoni rosa, you’ll make a homemade pink sauce with a savory sausage base and a sprinkle of chili flakes (for a little heat!). Toss that with rigatoni and sautéed zucchini, then sprinkle Parmesan all over and we promise: you’ll be blushing from all the compliments you receive on this meal.",
+    "id": 5,
+    "image": {
+      "filename": "recipe_5.jpeg",
+      "type": "image/jpeg"
+    }
+  },
+  {
+    "title": "Cheesy Smashed Pork Burgers",
+    "difficulty": "7",
+    "time": "45",
+    "details": {
+      "ingredients": [
+        {
+          "name": "Onion",
+          "amount": "1 unit",
+          "type": "Optional"
+        },
+        {
+          "name": "Potatoes",
+          "amount": "12 oz",
           "type": "Essential"
         },
         {
           "name": "Old Bay Seasoning",
-          "amount": ".75 Tsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Garlic and Herb Seasoning",
-          "amount": ".75 Tsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Lemon Juice",
-          "amount": ".5 Tsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Fine Sea Salt",
-          "amount": ".25 Tsp",
-          "type": "Essential"
-        },
-        {
-          "name": "Freshly Ground Black Pepper",
-          "amount": "To Taste',
+          "amount": "1 tbsp",
           "type": "Optional"
+        },
+        {
+          "name": "Mayonnaise",
+          "amount": "2 tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Ketchup",
+          "amount": "2 tbsp",
+          "type": "Optional"
+        },
+        {
+          "name": "Dijon Mustard",
+          "amount": "2 tsp",
+          "type": "Optional"
+        },
+        {
+          "name": "Ground Pork",
+          "amount": "10 oz",
+          "type": "Alternatives",
+          "Alternatives": [
+            {
+              "name": "Ground Pork",
+              "amount": "10 oz"
+            }
+          ]
+        },
+        {
+          "name": "White Cheddar Cheese",
+          "amount": "1/2 cup",
+          "type": "Essential"
+        },
+        {
+          "name": "Potato Buns",
+          "amount": "2 sets",
+          "type": "Essential"
+        },
+        {
+          "name": "salt",
+          "amount": "1",
+          "type": "Essential"
+        },
+        {
+          "name": "pepper",
+          "amount": "1",
+          "type": "Essential"
+        },
+        {
+          "name": "Cooking Oil",
+          "amount": "4 tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1 tsp",
+          "type": "Essential"
         }
       ],
       "instructions": [
-        "Preheat Oven to 425 F",
-        "Line a cooking tray with Aluminum foil, lightly coat with oil or non-stick spray",
-        "Melt butter in a bowl",
-        "Stir in Old Bay, Garlic and Herb Seasoning, Lemon juice, and sea salt",
-        "Place salmon filets on foil covered try",
-        "Season with freshly ground Black Pepper to taste",
-        "Lightly spoon butter sauce onto each filet",
-        "Bake at 425 F for approximately 11-13 minutes"
+        "Adjust rack to top position and preheat oven to 425 degrees. Wash and dry produce. • Cut potatoes into ½-inch-thick wedges. Halve, peel, and thinly slice onion.",
+        "Toss potatoes on a baking sheet with a drizzle of oil and half the Old Bay Seasoning (you’ll use more later). Season lightly with salt and pepper. TIP: No need to season generously— there’s already salt and pepper in the seasoning! • Roast on top rack until browned and crispy, 20-25 minutes.",
+        "While potatoes roast, heat a large drizzle of oil in a medium, preferably nonstick, pan over medium-high heat. Add onion; cook, stirring occasionally, until browned and softened, 8-10 minutes. • Add 1 tsp sugar (2 tsp for 4 servings) and a splash of water; cook until onion is caramelized and jammy, 2-3 minutes more. Season with salt and pepper. • Turn off heat; transfer to a small bowl.",
+        "Meanwhile, in a second small bowl, combine mayonnaise, ketchup, mustard, and as much remaining Old Bay Seasoning as you like. Set aside. • Form pork* into two equal-size balls (four balls for 4 servings); season all over with salt and pepper.\r\n\r\nSwap in for beef.",
+        "Heat a drizzle of oil in pan used for onion over medium-high heat. Once pan is hot, add pork. Firmly flatten each ball with a spatula to create very thin patties. (TIP: Do so carefully; oil may splatter a bit.) Cook until browned and cooked through, 4-7 minutes per side. (Don’t worry if the patties aren’t perfectly round—those irregular edges will turn crispy.) • In the last 1-2 minutes of cooking, top patties with cheddar; cover pan to melt cheese. Remove from heat.",
+        "While patties cook, halve and toast buns. • Divide buns between plates and fill with patties, caramelized onion, and half the special sauce. Serve burgers with Old Bay fries on the side and remaining special sauce for dipping."
       ]
     },
-    "about": "}
-   {
-    "title": "Honey Sriracha Oven Baked Salmon",
-    "difficulty": "4",
-    "time": "35",
+    "about": "Serves 2. These burgers are sure to be a smash hit. The secret is all in the texture! The crispy, craggy edges, achieved when balls of ground pork are pressed down in a hot pan with a spatula to create super-thin, crispy burgers. Topped with gooey white cheddar, the patties are sandwiched between potato buns with caramelized onion and a homemade special sauce that’s also perfect for pairing with Old Bay fries on the side—and will elicit major “oohs” and “ahhs” from your dining companions.",
+    "id": 6,
+    "image": {
+      "filename": "recipe_6.jpeg",
+      "type": "image/jpeg"
+    }
+  },
+  {
+    "title": "Meatballs & Creamy Onion Gravy",
+    "difficulty": "7",
+    "time": "40",
     "details": {
       "ingredients": [
         {
-          "name": "Skin on Salmon",
-          "amount": "1 Lb",
+          "name": "Potatoes",
+          "amount": "12 oz",
           "type": "Essential"
         },
         {
-          "name": "Neutral Oil (Canola, Vegetable, etc)",
-          "amount": "1 Tbsp",
+          "name": "Onion",
+          "amount": "1 unit",
           "type": "Essential"
         },
         {
-          "name": "Minced Garlic",
-          "amount": "1 Clove",
+          "name": "Sour Cream",
+          "amount": "3 tbsp",
           "type": "Essential"
         },
         {
-          "name": "Sriracha Sauce",
-          "amount": "2 Tbsp",
+          "name": "Ground Beef",
+          "amount": "10 oz",
           "type": "Essential"
         },
         {
-          "name": "Soy Sauce",
-          "amount": "1 Tbsp",
+          "name": "Pank Breadcrumbs",
+          "amount": "1/4 cup",
           "type": "Essential"
         },
         {
-          "name": "Honey",
-          "amount": "1.5 Tbsp",
+          "name": "Garlic Powder",
+          "amount": "1 tsp",
           "type": "Essential"
         },
         {
-          "name": "Rice Vinegar",
-          "amount": "1 Tbsp",
+          "name": "Nutmeg",
+          "amount": "1 tsp",
           "type": "Essential"
         },
         {
-          "name": "Sesame Oil",
-          "amount": "1 Tsp",
+          "name": "Peas",
+          "amount": "4 oz",
+          "type": "Essential"
+        },
+        {
+          "name": "Flour",
+          "amount": "1 tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Beef Stock Concentrates",
+          "amount": "2 tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Cream Cheese",
+          "amount": "2 tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Cooking oil",
+          "amount": "2 tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Butter",
+          "amount": "4 tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Salt",
+          "amount": "1",
+          "type": "Essential"
+        },
+        {
+          "name": "Pepper",
+          "amount": "1",
+          "type": "Essential"
+        }
+      ],
+      "instructions": [
+        "Adjust rack to top position and preheat oven to 450 degrees. Wash and dry produce. • Dice potatoes into ½-inch pieces. Halve and peel onion; grate half the onion on the largest holes of a box grater. Thinly slice remaining onion. • Place potatoes in a medium pot with enough salted water to cover by 2 inches. Bring to a boil and cook until tender, 15-20 minutes. Reserve ½ cup potato cooking liquid (¾ cup for 4 servings), then drain. • Return potatoes to pot and mash with half the sour cream (you’ll use the rest later) and 2 TBSP butter (4 TBSP for 4) until smooth and creamy, adding splashes of reserved potato cooking liquid as needed. Season with salt and pepper. • Keep covered off heat until ready to serve.",
+        "While potatoes cook, in a large bowl, combine beef*, grated onion, panko, garlic powder, ¼ tsp nutmeg (½ tsp for 4 servings), salt (we used ¾ tsp, 1½ tsp for 4), and pepper. (You’ll use more nutmeg later.) • Form mixture into 10-12 1½-inch meatballs (20-24 meatballs for 4) and place on a lightly oiled baking sheet. • Roast on top rack until browned and cooked through, 14-16 minutes.",
+        "Meanwhile, melt 1 TBSP butter in a large pan over medium-high heat. Add peas and cook, undisturbed, until lightly browned, 2-3 minutes. • Stir peas. Cook, stirring occasionally, until lightly charred, 1-2 minutes more. • Turn off heat; transfer to a plate. Wipe out pan.",
+        "Heat a drizzle of oil in same pan over medium heat. Add sliced onion and a pinch of salt; cook, stirring occasionally, until onion is browned and softened, 3-6 minutes. • Add 1 TBSP butter (2 TBSP for 4 servings) and cook, whisking, until butter melts. • Sprinkle flour over onion; cook, whisking constantly, until lightly browned, 1-2 minutes."
+      ]
+    },
+    "about": "Serves 2. Calling all comfort food fans! Wait…who isn’t a fan?! This week’s selection ticks all of the feel-good boxes. Warmly spiced meatballs, à la Sweden, draped in rich and creamy onion sauce; check! Fluffy, sour cream mashed spuds and buttery, skillet charred peas; check, check! The only thing missing is your fave dining companion. And we won’t tell if you enjoy this meal in your PJs!",
+    "id": 7,
+    "image": {
+      "filename": "recipe_7.jpeg",
+      "type": "image/jpeg"
+    }
+  },
+  {
+    "title": "One-Pan Santa Fe Pork Tacos",
+    "difficulty": "3",
+    "time": "25",
+    "details": {
+      "ingredients": [
+        {
+          "name": "Onion",
+          "amount": "1 unit",
+          "type": "Essential"
+        },
+        {
+          "name": "Cilantro",
+          "amount": "1/4 oz",
           "type": "Optional"
         },
         {
-          "name": "Sesame Seeds",
-          "amount": "1 Tbsp",
+          "name": "Lemon",
+          "amount": "1 unit",
+          "type": "Optional"
+        },
+        {
+          "name": "Ground Pork",
+          "amount": "10 oz",
+          "type": "Alternatives",
+          "Alternatives": [
+            {
+              "name": "Chopped Chicken Breast",
+              "amount": "10 oz"
+            },
+            {
+              "name": "Ground Beef",
+              "amount": "10 oz"
+            }
+          ]
+        },
+        {
+          "name": "Southwest Spice Blend",
+          "amount": "1 tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Shredded Red Cabbage",
+          "amount": "4 oz",
+          "type": "Optional"
+        },
+        {
+          "name": "Mayonnaise",
+          "amount": "2 tbsp",
+          "type": "Optional"
+        },
+        {
+          "name": "Tex-Mex Paste",
+          "amount": "1 tbsp",
+          "type": "Optional"
+        },
+        {
+          "name": "Flour Tortillas",
+          "amount": "6 tortillas",
+          "type": "Essential"
+        },
+        {
+          "name": "Monterey Jack Cheese",
+          "amount": "1/4 cup",
+          "type": "Optional"
+        },
+        {
+          "name": "Sour Cream",
+          "amount": "1 1/2 tbsp",
           "type": "Optional"
         }
       ],
       "instructions": [
-        "Preheat Oven to 425 F",
-        "Line a cooking tray with Aluminum foil and lay salmon skin side down",
-        "Season salmon with Kosher Salt and Fresh Black Pepper",
-        "Place salmon into oven and cook for 10 minutes",
-        "in a pot add the Neutral Oil, Garlic, Sriracha, Soy Sauce, Honey, and Rice Vinegar",
-        "Bring sauce to a boil then lower heat to low simmer",
-        "Cook for 8-10 minutes or until sauce has thickened",
-        "Take salmon out of the oven and brush it with the sauce",
-        "Bake salmon once more for an additional 8-10 minutes"
+        "Wash and dry produce. • Halve, peel, and finely dice onion. Finely chop cilantro.",
+        "Heat a drizzle of oil in a large pan over medium-high heat. Add onion and a pinch of salt; cook, stirring occasionally, until slightly softened and lightly browned, 2-3 minutes. • Add pork and Southwest Spice Blend. Cook, breaking up meat into pieces, until browned and cooked through, 4-6 minutes. TIP: If there’s excess grease in your pan, carefully pour it out.\r\n\r\nPat chicken dry with paper towels. Cook  through this step as instructed, swapping in chicken or beef for pork.",
+        "While pork cooks, in a large bowl, combine cabbage, mayonnaise, half the cilantro, half the vinegar (all for 4 servings), 1 tsp sugar (2 tsp for 4), and a pinch of salt and pepper.",
+        "Stir Tex-Mex paste into pan with pork mixture until fully coated. Taste and season with salt and pepper. Remove pan from heat. • Wrap tortillas in damp paper towels and microwave until warm and pliable, 30 seconds. • Divide tortillas between plates and fill with pork filling, Monterey Jack, slaw, sour cream, and remaining cilantro."
       ]
     },
-    "about": "Literally translated as “stir-fried rice cake,” tteokbokki (떡볶이) is a beloved Korean rice cake dish with many variations and a rich history.  It’s also spelled ddukbokki, ddeokbokki, dukbokki or topokki. This spicy rice cake dish is enormously popular as a street food and also often enjoyed at home. Unlike gungjung tteokbokki, which has been around for hundreds of years, the red spicy tteokbokki has a relatively short history. It was developed in 1953, the year the Korean War ended, by a woman named Ma Bok-rim in the Sindang-dong neighborhood in Seoul. The chewy rice cake in a spicy gochujang sauce instantly became popular as an affordable comfort snack.",
-    "id": 4,
-    "image": {
-      "filename": "",
-      "type": ""
-    }
-  }",
-    "id": 5,
-    "image": {
-      "filename": "",
-      "type": ""
-    }
+    "about": "Makes 6 tacos. We firmly believe taco night should be treated like a holiday—one that should be celebrated at LEAST once a week, if not more. If you agree, you’ve got to add this Southwest version to your repertoire. Spiced ground pork and onion are piled into steamy tortillas with Monterey Jack cheese, a tangy cilantro slaw, and sour cream. Taco ’bout an awesome meal.",
+    "id": 8
   }
 ]

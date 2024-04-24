@@ -106,28 +106,28 @@ const Home = () => {
     };
 
     // parses instruction to bold the names of the ingredients in the instruction
-    const parseInstruction = (instruction, ingredients) => {
-        const words = instruction.split(/(\s+)/); // split by whitespace but preserve whitespace characters
+    // const parseInstruction = (instruction, ingredients) => {
+    //     const words = instruction.split(/(\s+)/); // split by whitespace but preserve whitespace characters
     
-        return words.map((word, index) => {
-            // Check if the word matches any ingredient name
-            const isIngredient = ingredients.some((ingredient) =>
-                ingredient.name.toLowerCase().includes(word.toLowerCase().trim()) // trim the word to remove leading/trailing whitespace
-            );
+    //     return words.map((word, index) => {
+    //         // Check if the word matches any ingredient name
+    //         const isIngredient = ingredients.some((ingredient) =>
+    //             ingredient.name.toLowerCase().includes(word.toLowerCase().trim()) // trim the word to remove leading/trailing whitespace
+    //         );
     
-            if (word === " ")
-            {
-                return <span key={index}>&nbsp;</span>
-            }
+    //         if (word === " ")
+    //         {
+    //             return <span key={index}>&nbsp;</span>
+    //         }
     
-            if (isIngredient) {
+    //         if (isIngredient) {
                 
-                return <strong key={index}>{word}</strong>; // ingredient words are bolded
-            }
+    //             return <strong key={index}>{word}</strong>; // ingredient words are bolded
+    //         }
 
-            return <span key={index}>{word}</span>; // regular words (not ingredient words)
-        });
-    };
+    //         return <span key={index}>{word}</span>; // regular words (not ingredient words)
+    //     });
+    // };
 
     return (
         <div className='homepage'>
@@ -224,7 +224,7 @@ const Home = () => {
                     {selectedRecipe.details.instructions && selectedRecipe.details.instructions.map((instruction, index) => (
                         <div key={index} className='recipe-card-instruction-card'>
                             <span className='recipe-card-instruction-index'>{index + 1}.</span> 
-                            <span className='recipe-card-instruction'>{parseInstruction(instruction, selectedRecipe.details.ingredients)}</span>
+                            <span className='recipe-card-instruction'>{instruction}</span>
                         </div>
                        
                     ))}

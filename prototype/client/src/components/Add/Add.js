@@ -253,7 +253,7 @@ const Add = () => {
           <span className='post-form-section-title'>/10</span>
           <span className='post-form-section-title'>Image</span>
           <input type='file' name="file" onChange={handleFileChange}/>
-          {file && <img src={URL.createObjectURL(file)} alt="Selected Image" />}
+          {/* {file && <img src={URL.createObjectURL(file)} alt="Selected Image" />} */}
         </div>
       </div>
       <div className='post-row'>
