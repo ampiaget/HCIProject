@@ -1177,7 +1177,6 @@
       "type": "image/jpeg"
     }
   },
-  },
   {
     "title": "6 minute seared Ahi Tuna Steaks",
     "difficulty": "3",
@@ -1531,7 +1530,7 @@
         },
         {
           "name": "Freshly Ground Black Pepper",
-          "amount": "To Taste',
+          "amount": "To Taste",
           "type": "Optional"
         }
       ],
@@ -1546,7 +1545,8 @@
         "Bake at 425 F for approximately 11-13 minutes"
       ]
     },
-    "about": "}
+    "about": ""
+    },
    {
     "title": "Honey Sriracha Oven Baked Salmon",
     "difficulty": "4",
@@ -1612,15 +1612,10 @@
       ]
     },
     "about": "Literally translated as “stir-fried rice cake,” tteokbokki (떡볶이) is a beloved Korean rice cake dish with many variations and a rich history.  It’s also spelled ddukbokki, ddeokbokki, dukbokki or topokki. This spicy rice cake dish is enormously popular as a street food and also often enjoyed at home. Unlike gungjung tteokbokki, which has been around for hundreds of years, the red spicy tteokbokki has a relatively short history. It was developed in 1953, the year the Korean War ended, by a woman named Ma Bok-rim in the Sindang-dong neighborhood in Seoul. The chewy rice cake in a spicy gochujang sauce instantly became popular as an affordable comfort snack.",
-    "id": 4,
+    "id": "18",
     "image": {
       "filename": "",
       "type": ""
     }
-  },
-    "id": 18,
-    "image": {
-      "filename": "",
-      "type": ""
-    }
+   }
 ]
