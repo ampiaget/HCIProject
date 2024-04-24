@@ -3,9 +3,16 @@ import { useLocation } from 'react-router-dom';
 import clockImage from '../../assets/Clock.png';
 import RateItModal from '../RateItModal/RateItModal';
 import IngredientCard from '../IngredientCard/IngredientCard';
-
 import axios from 'axios';
 import './Home.css'
+
+// importing all images from the 'recipe_images' directory for access when recipe selected
+const importAll = (r) => {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+};
+const images = importAll(require.context('../../assets/recipe_images', false, /\.(png|jpe?g|svg)$/));
 
 const Home = () => {
     const location = useLocation();
@@ -98,6 +105,7 @@ const Home = () => {
         }
     };
 
+    // parses instruction to bold the names of the ingredients in the instruction
     const parseInstruction = (instruction, ingredients) => {
         const words = instruction.split(/(\s+)/); // split by whitespace but preserve whitespace characters
     
@@ -117,7 +125,7 @@ const Home = () => {
                 return <strong key={index}>{word}</strong>; // ingredient words are bolded
             }
 
-            return <span key={index}>{word}</span>; // regular words
+            return <span key={index}>{word}</span>; // regular words (not ingredient words)
         });
     };
 
@@ -129,12 +137,16 @@ const Home = () => {
                 <div className='homepage-search'>
                     <input type="text" className='search-input' placeholder="Search Recipes..." onChange={(e) => handleSearch(e.target.value)} />
                     {/*<button className='clear-button' onClick={handleClearSearch}>Clear</button> Something in here is broken. Not clearing the text*/}
-                    <select className='difficulty-dropdown' onChange={(e) => handleDifficultyChange(e.target.value)}>
-                        <option value="">All Difficulties</option>
-                        {[...Array(10).keys()].map((difficulty) => (
-                        <option key={difficulty + 1} value={difficulty + 1}>{difficulty + 1}</option>
-                        ))}
-                    </select>
+                    <div className='search-filter-dropdown-div'>
+                        <span className='homepage-search-info'>Max skill level:</span>
+                        <div className="search-dropdown-arrow"></div>
+                        <select className='difficulty-dropdown' onChange={(e) => handleDifficultyChange(e.target.value)}>
+                            <option value="">All Difficulties</option>
+                            {[...Array(10).keys()].map((difficulty) => (
+                            <option key={difficulty + 1} value={difficulty + 1}>{difficulty + 1}</option>
+                            ))}
+                        </select>
+                    </div>
                 </div>
 
                 {/* Card Container */}
@@ -200,7 +212,11 @@ const Home = () => {
                         <span className='recipe-card-about'>{selectedRecipe.about}</span>
                     </div>
                 </div>
-               
+                {selectedRecipe.image && images[selectedRecipe.image.filename] &&
+                    <div className='recipe-card-image-div'>
+                        <img className='recipe-list-image' src={images[selectedRecipe.image.filename].default} alt="Recipe"/>
+                    </div>
+                }
                 <div>
                     <span className='recipe-card-section'>Recipe</span>
                 </div>

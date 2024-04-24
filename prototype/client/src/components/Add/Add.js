@@ -7,6 +7,13 @@ import './Add.css'
 const Add = () => {
   const navigate = useNavigate();
 
+  const [file, setFile] = useState();
+
+  function handleFileChange(e) {
+    console.log(e.target.files);
+    setFile(e.target.files[0]);
+  }
+
   const [newRecipe, setNewRecipe] = useState({
     title: '',
     difficulty: '',
@@ -159,8 +166,6 @@ const Add = () => {
       alert('Please fill in current instruction.');
       return;
     }
-
-    
   };
 
   const handleInstructionChange = (index, value) => {
@@ -175,7 +180,7 @@ const Add = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    newRecipe.details.ingredients = addedIngredients;
+    
       // Perform validation
     if (
       newRecipe.title.trim() === '' ||
@@ -183,6 +188,7 @@ const Add = () => {
       newRecipe.time.trim() === '' ||
       newRecipe.about.trim() === '' ||
       newRecipe.details.ingredients.length === 0 ||
+      addedIngredients.length === 0 ||
       newRecipe.details.instructions.some(instruction => instruction.trim() === '')
     ) {
       // If any field is blank, display an error message and return early
@@ -190,8 +196,16 @@ const Add = () => {
       return;
     }
     try {
-      
-      const response = await axios.post('http://localhost:5000/recipes', newRecipe);
+      newRecipe.details.ingredients = addedIngredients;
+      newRecipe.file = file;
+      // const response = await axios.post('http://localhost:5000/recipes', newRecipe);
+      // Make a POST request to the backend with the FormData object
+      const response = await axios.post('http://localhost:5000/recipes', newRecipe, {
+      headers: {
+        'Content-Type': 'multipart/form-data', // Important: Set the content type to multipart/form-data
+      },
+      });
+      console.log(newRecipe)
       console.log('Recipe added successfully:', response.data);
 
       // Clear the form after successfully adding the recipe
@@ -206,6 +220,7 @@ const Add = () => {
         }
       });
       navigate('/', { state: { newRecipe: response.data } });
+      setFile(null)
 
     } catch (error) {
       console.error('Error adding recipe:', error);
@@ -221,7 +236,7 @@ const Add = () => {
         </div>
         <div className='row-one-right'>
           <span className='post-form-section-title'>Difficulty</span>
-          
+  
           <select className='post-form-difficulty-dropdown' value={newRecipe.difficulty} onChange={handleChange} name="difficulty" placeholder='0'>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -236,6 +251,9 @@ const Add = () => {
           </select>
           <div className="dropdown-arrow"></div>
           <span className='post-form-section-title'>/10</span>
+          <span className='post-form-section-title'>Difficulty</span>
+          <input type='file' name="file" onChange={handleFileChange}/>
+          {file && <img src={URL.createObjectURL(file)} alt="Selected Image" />}
         </div>
       </div>
       <div className='post-row'>
