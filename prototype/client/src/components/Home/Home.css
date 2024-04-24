@@ -14,7 +14,7 @@
     width: 90%;
     height: 25px;
     margin-bottom: 8px;
-    
+
     background: #FFFFFF;
     border: 1px solid #E0E0E0;
     border-radius: 4px;
@@ -76,7 +76,7 @@
     display:flex;
     flex-direction: row;
     align-items: center;
-    height: 90px;
+    height: 120px;
     background-color: #ffffff;
     border-radius: 0px 8px 8px 0px;
     margin-bottom: 5px;
@@ -213,6 +213,7 @@
     display:flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .recipe-card-time{
@@ -224,6 +225,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 .recipe-card-ingredients{
     display: flex;
     flex-direction: column;
@@ -238,6 +240,18 @@
     flex-direction: column;
     align-items: flex-start;
     margin-right: 30px;
+    margin-left: 45px;
+}
+
+.recipe-card-about-text{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #3E4147;
+    max-width: 400px;
 }
 
 .recipe-card-section{
@@ -258,10 +272,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    /* flex-wrap: wrap; */
     padding: 4px;
     margin: 12px 30px 0px 20px;
-    max-width: fit-content;
+    max-width: 800px;
+    /* max-height: fit-content; */
 }
+
 .recipe-card-instruction-index {
     font-family: 'Oswald';
     font-style: normal;
@@ -281,8 +298,10 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-
+    
     color: #000000;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 .recipe-card-image-div{

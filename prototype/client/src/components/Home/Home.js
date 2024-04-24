@@ -209,7 +209,7 @@ const Home = () => {
                     
                     <div className='recipe-card-about'>
                         <span className='recipe-card-section'>About</span>
-                        <span className='recipe-card-about'>{selectedRecipe.about}</span>
+                        <span className='recipe-card-about-text'>{selectedRecipe.about}</span>
                     </div>
                 </div>
                 {selectedRecipe.image && images[selectedRecipe.image.filename] &&
