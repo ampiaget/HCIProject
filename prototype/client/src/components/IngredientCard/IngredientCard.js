@@ -3,7 +3,7 @@ import essential_star from '../../assets/Star.png';
 import checkmark from '../../assets/Checkbox.png';
 import './IngredientCard.css'
 
-const IngredientCard = ({ingredient}) => {
+const IngredientCard = ({ingredient, onIngredientSelect}) => {
 
     const [showAlternative, setShowAlternative] = useState(null);
     const [cardIngredient, setCardIngredient] = useState(ingredient);
@@ -19,6 +19,18 @@ const IngredientCard = ({ingredient}) => {
     const handleIngredientChange = (alt) => {
         setCardIngredient(alt);
         handleDropdownClicked();
+
+        if (onIngredientSelect)
+        {
+            onIngredientSelect(alt);
+        }
+    }
+
+    const handleIngredientChecked = () => {
+        if (onIngredientSelect)
+        {
+            onIngredientSelect(ingredient)
+        }
     }
 
     return (
@@ -56,6 +68,7 @@ const IngredientCard = ({ingredient}) => {
                         type="checkbox"
                         className="ingredient-type-checkbox"
                         id={ingredient.name}
+                        onClick={handleIngredientChecked}
                     />
                 )}
 

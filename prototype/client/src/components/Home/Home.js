@@ -45,6 +45,8 @@ const Home = () => {
     // handling user selecting a recipe
     const handleSelection = (recipe) => {
         setSelectedRecipe(recipe); // Set the selected recipe directly
+        setSelectedIngredients(null)
+        setSelectedIngredients(recipe.details.ingredients.filter(ingredient => ingredient.type === "Essential" || ingredient.type === "Alternatives"))
         setIsModalOpen(false)
     };
 
@@ -105,29 +107,67 @@ const Home = () => {
         }
     };
 
-    // parses instruction to bold the names of the ingredients in the instruction
-    // const parseInstruction = (instruction, ingredients) => {
-    //     const words = instruction.split(/(\s+)/); // split by whitespace but preserve whitespace characters
-    
-    //     return words.map((word, index) => {
-    //         // Check if the word matches any ingredient name
-    //         const isIngredient = ingredients.some((ingredient) =>
-    //             ingredient.name.toLowerCase().includes(word.toLowerCase().trim()) // trim the word to remove leading/trailing whitespace
-    //         );
-    
-    //         if (word === " ")
-    //         {
-    //             return <span key={index}>&nbsp;</span>
-    //         }
-    
-    //         if (isIngredient) {
-                
-    //             return <strong key={index}>{word}</strong>; // ingredient words are bolded
-    //         }
+    // logic for selecting active ingredients so we know which to bold
+    const [selectedIngredients, setSelectedIngredients] = useState([]);
 
-    //         return <span key={index}>{word}</span>; // regular words (not ingredient words)
-    //     });
-    // };
+    const handleIngredientSelect = (selectedIngredient) => {
+        setSelectedIngredients(prevIngredients => {
+            // check if the ingredient is already in the list
+            const exists = prevIngredients.some(ingredient => ingredient.name === selectedIngredient.name);
+    
+            // for optional ingredients
+            if (selectedIngredient.type === "Optional") {
+                if (!exists) {
+                    // if the ingredient doesn't exist, add it
+                    const updatedIngredients = [...prevIngredients, selectedIngredient];
+                    return updatedIngredients;
+                } else {
+                    // if it does exists, remove it
+                    const updatedIngredients = prevIngredients.filter(ingredient => ingredient.name !== selectedIngredient.name);
+                    return updatedIngredients;
+                }
+            } else {
+                // for alternative ingredients
+                let updatedIngredients;
+
+                const originalIngredient = prevIngredients.find(ingredient => {  
+                    // only need to check ingredients marked Alternatives and alternatives don't have type                  
+                    if (ingredient.type === "Alternatives" || !ingredient.type) {
+                        return ingredient.name === selectedIngredient.name || selectedRecipe.details.ingredients?.some(original => {
+                            // check if name of the selectedIngredient matches any ingredient name or is an alternative for one
+                            return original.name === selectedIngredient.name || (original.Alternatives?.some(alt => alt.name === selectedIngredient.name));
+                        });
+                    }
+                    return false;
+                });
+
+                if (originalIngredient) {
+                    // need to remove the original ingredient and its alternatives from the list bc we don't know which option was in the list previously
+                    const alternativesToRemove = [...(originalIngredient?.Alternatives || []), originalIngredient].filter(Boolean);
+                    updatedIngredients = prevIngredients.filter(ingredient => {
+                        return ![...alternativesToRemove, originalIngredient].some(item => item.name === ingredient.name);
+                    });
+                }
+                 else {
+                    updatedIngredients = prevIngredients;
+                }
+
+                // add the alternative ingredient
+                updatedIngredients.push(selectedIngredient);
+                return updatedIngredients;
+            }
+        });
+    };
+    
+    // parses instruction to bold the names of the ingredients in the instruction
+    const boldIngredientNames = (instruction, selectedIngredients) => {
+        // create a regular expression pattern to match each ingredient name
+        const ingredientNamesPattern = selectedIngredients.map(ingredient => `\\b${ingredient.name}\\b`).join('|');
+        const regex = new RegExp(ingredientNamesPattern, 'gi'); // 'gi' flag for global and case-insensitive matching
+    
+        // replace each matched ingredient name in the instruction with the bolded version
+        return instruction.replace(regex, '<strong>$&</strong>');
+    };
 
     return (
         <div className='homepage'>
@@ -203,7 +243,7 @@ const Home = () => {
                     <div className='recipe-card-ingredients'>
                         <span className='recipe-card-section'>Ingredients</span>
                         {selectedRecipe.details.ingredients && selectedRecipe.details.ingredients.map((ingredient, index) => (
-                            <IngredientCard key={index} ingredient={ingredient} />
+                            <IngredientCard key={index} ingredient={ingredient} onIngredientSelect={handleIngredientSelect} />
                         ))}
                     </div>
                     
@@ -224,7 +264,7 @@ const Home = () => {
                     {selectedRecipe.details.instructions && selectedRecipe.details.instructions.map((instruction, index) => (
                         <div key={index} className='recipe-card-instruction-card'>
                             <span className='recipe-card-instruction-index'>{index + 1}.</span> 
-                            <span className='recipe-card-instruction'>{instruction}</span>
+                            <span className='recipe-card-instruction' dangerouslySetInnerHTML={{ __html: boldIngredientNames(instruction, selectedIngredients) }}/>
                         </div>
                        
                     ))}
