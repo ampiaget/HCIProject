@@ -64,4 +64,24 @@ app.post('/recipes', upload.single('file'), (req, res) => {
   res.status(201).json(newRecipe);
 });
 
+// Update an existing recipe
+app.post('/recipes/:id/rating', (req, res) => {
+  const { id } = req.params;
+  const { rating } = req.body;
 
+  // Find the recipe with the given id
+  const recipe = recipesData.find(recipe => recipe.id === parseInt(id));
+
+  if (recipe) {
+    if (!recipe.userRatings)
+    {
+      recipe.userRatings = []
+    }
+    // Update the user ratings for the recipe
+    recipe.userRatings.push(rating);
+    fs.writeFileSync('server/recipeList.json', JSON.stringify(recipesData));
+    res.status(200).json({ message: 'User rating updated successfully' });
+  } else {
+    res.status(404).json({ error: 'Recipe not found' });
+  }
+});
