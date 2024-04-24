@@ -251,7 +251,7 @@ const Add = () => {
           </select>
           <div className="dropdown-arrow"></div>
           <span className='post-form-section-title'>/10</span>
-          <span className='post-form-section-title'>Difficulty</span>
+          <span className='post-form-section-title'>Image</span>
           <input type='file' name="file" onChange={handleFileChange}/>
           {file && <img src={URL.createObjectURL(file)} alt="Selected Image" />}
         </div>
