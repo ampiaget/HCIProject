@@ -96,5 +96,451 @@
       "filename": "recipe_4.jpeg",
       "type": "image/jpeg"
     }
+  },
+  {
+    "title": "6 minute seared Ahi Tuna Steaks",
+    "difficulty": "3",
+    "time": "30",
+    "details": {
+      "ingredients": [
+        {
+          "name": "Ahi Tuna Steaks",
+          "amount": "2",
+          "type": "Essential"
+        },
+        {
+          "name": "Soy Sauce",
+          "amount": "2 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Toasted Sesame Oil",
+          "amount": "1 tbsp",
+          "type": "Optional"
+        },
+        {
+          "name": "Honey",
+          "amount": "1 tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Kosher Salt",
+          "amount": "1/4 tsp",
+          "type": "Optional"
+        },
+        {
+          "name": "Black Pepper",
+          "amount": "1/4 Tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Cayenne Pepper",
+          "amount": "1/4 teaspoon",
+          "type": "Essential"
+        },
+        {
+          "name": "Green Onions",
+          "amount": "To taste",
+          "type": "Optional"
+        },
+        {
+          "name": "Toasted Sesame Seeds",
+          "amount": "To taste",
+          "type": "Optional"
+        },
+        {
+          "name": "Lime Wedges",
+          "amount": "To Taste",
+          "type": "Optional"
+        }
+      ],
+      "instructions": [
+        "Pat Ahi Tuna Steaks dry",
+        "Mix Soy Sauce, Toasted Sesame Oil, Honey, Kosher Salt (If desired), Black Pepper, and Cayenne Pepper",
+        "Mix until the honey is fully dissolved",
+        "Marinate the Tuna for as little as 15 min up to overnight",
+        "Preheat a skillet on medium-high heat",
+        "Add canola oil (Any neutral oil will do) the pan",
+        "Sear Tuna Steaks for 1 - 1.75 minutes per side depending on how done you like your tuna"
+      ]
+    },
+    "about": "A quick and easy dinner recipe that pairs great with rice! You can even save the marinade from the tuna and drizzle it onto the rice for added flavor for your entire meal. /n/n There is always a risk when consuming raw or undercooked fish.  Tuna is normally served 'rare' or 'medium-rare' but this does not mean there is zero risk. ",
+    "id": 2,
+    "image": {
+      "filename": "",
+      "type": ""
+    }
+  },
+  {
+    "title": "Jo Mama's Spaghetti",
+    "difficulty": "6",
+    "time": "300",
+    "details": {
+      "ingredients": [
+        {
+          "name": "Italian Sausage, Casing removed (Mild or Hot)",
+          "amount": "2 Lbs",
+          "type": "Essential"
+        },
+        {
+          "name": "Small Onion, Chopped",
+          "amount": "1",
+          "type": "Optional"
+        },
+        {
+          "name": "Garlic Cloves, Minced",
+          "amount": "3-4",
+          "type": "Essential"
+        },
+        {
+          "name": "Diced Tomatoes",
+          "amount": "1 28oz Can",
+          "type": "Optional"
+        },
+        {
+          "name": "Toamto Paste",
+          "amount": "2 6oz cans",
+          "type": "Essential"
+        },
+        {
+          "name": "Tomato Sauce",
+          "amount": "2 15oz cans",
+          "type": "Essential"
+        },
+        {
+          "name": "Water",
+          "amount": "2 Cups",
+          "type": "Essential"
+        },
+        {
+          "name": "Basil",
+          "amount": "3 Tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Dried Parsley Flakes",
+          "amount": "2 Tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Brown Sugar",
+          "amount": "1.5 Tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 Tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Fresh Ground Black Pepper",
+          "amount": ".25 Tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Red Wine (Cabernet Works Great!)",
+          "amount": ".25 Cup",
+          "type": "Optional"
+        }
+      ],
+      "instructions": [
+        "In large stockpot brown italian sausage, breaking it apart as you stir",
+        "Add onions and continue cooking, stirring occasionally until onions are soft",
+        "Add garlic, tomatoes, tomato paste, tomato sauce, and water. Stir until mostly combined",
+        "Add basil, parsley, brown sugar, salt, crushed red pepper flakes, and black pepper",
+        "Stir well to combine, bring to a boil",
+        "If using Red Wine, stir in now",
+        "Reduce burner temperature until sauce is at a low simmer, stirring frequently for at least 1 hour. Here a longer simmer means more flavor and a better sauce, be careful not to let it burn",
+        "When sauce is ready cook spaghetti noodles according the instructions on the box",
+        "Sppon sauce over drained spaghetti noodles"
+      ]
+    },
+    "about": "The difficulty in this recipe is more a function of how long it takes for a good simmer which means a long time watching and stirring the sauce. My kids will give up a steak dinner for this spaghetti. It is a recipe I have been perfecting for years and it is so good (if I may humbly say) that my kids are disappointed when they eat spaghetti anywhere else but home! ",
+    "id": 3,
+    "image": {
+      "filename": "",
+      "type": ""
+    }
+  },
+  {
+    "title": "Tteokbokki (Korean Spicy Rice Cake)",
+    "difficulty": "5",
+    "time": "40",
+    "details": {
+      "ingredients": [
+        {
+          "name": "Tteokbokki tteok (Rice Cake)",
+          "amount": "1 Lb",
+          "type": "Essential"
+        },
+        {
+          "name": "Eomuk (Fish cake) sheets",
+          "amount": "2",
+          "type": "Essential"
+        },
+        {
+          "name": "Yangbaechu (Green Cabbage)",
+          "amount": "4oz",
+          "type": "Optional"
+        },
+        {
+          "name": "Scallions",
+          "amount": "2",
+          "type": "Optional"
+        },
+        {
+          "name": "Minced Garlic",
+          "amount": "1 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Anchovy Broth or Water",
+          "amount": "4 Cups",
+          "type": "Essential"
+        },
+        {
+          "name": "Gochujang",
+          "amount": "3 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Gochugaru",
+          "amount": "3 Tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Soy Sauce",
+          "amount": "1 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Sugar",
+          "amount": "2 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Corn Syrup",
+          "amount": "1 Tbsp",
+          "type": "Optional"
+        }
+      ],
+      "instructions": [
+        "Soak the Rice cakes for about 20 minutes",
+        "Cut the fish cake, scallions, and cabbage into approximately 2 inch long pieces",
+        "In a large pan add the Anchocy Broth, Gochujang, Gochugaru, Soy Sauce, Sugar, and Corn Syrup",
+        "Stir to combine the ingredients until the Gochugaru has completely dissolved.",
+        "Add the rice cakes, bring to a boil and cook for 8-10 minutes. Stir frequently to prevent sticking",
+        "Drop in the fish cake, scallions, and cabbage and stir for another 4-6 minutes",
+        "When rice cakes are soft and the sauce is nice and thick remove from heat and server"
+      ]
+    },
+    "about": "Literally translated as “stir-fried rice cake,” tteokbokki (떡볶이) is a beloved Korean rice cake dish with many variations and a rich history.  It’s also spelled ddukbokki, ddeokbokki, dukbokki or topokki. This spicy rice cake dish is enormously popular as a street food and also often enjoyed at home. Unlike gungjung tteokbokki, which has been around for hundreds of years, the red spicy tteokbokki has a relatively short history. It was developed in 1953, the year the Korean War ended, by a woman named Ma Bok-rim in the Sindang-dong neighborhood in Seoul. The chewy rice cake in a spicy gochujang sauce instantly became popular as an affordable comfort snack.",
+    "id": 4,
+    "image": {
+      "filename": "",
+      "type": ""
+    }
+  },
+  {
+    "title": "Honey Sriracha Oven Baked Salmon",
+    "difficulty": "4",
+    "time": "35",
+    "details": {
+      "ingredients": [
+        {
+          "name": "Skin on Salmon",
+          "amount": "1 Lb",
+          "type": "Essential"
+        },
+        {
+          "name": "Neutral Oil (Canola, Vegetable, etc)",
+          "amount": "1 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Minced Garlic",
+          "amount": "1 Clove",
+          "type": "Essential"
+        },
+        {
+          "name": "Sriracha Sauce",
+          "amount": "2 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Soy Sauce",
+          "amount": "1 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Honey",
+          "amount": "1.5 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Rice Vinegar",
+          "amount": "1 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Sesame Oil",
+          "amount": "1 Tsp",
+          "type": "Optional"
+        },
+        {
+          "name": "Sesame Seeds",
+          "amount": "1 Tbsp",
+          "type": "Optional"
+        }
+      ],
+      "instructions": [
+        "Preheat Oven to 425 F",
+        "Line a cooking tray with Aluminum foil and lay salmon skin side down",
+        "Season salmon with Kosher Salt and Fresh Black Pepper",
+        "Place salmon into oven and cook for 10 minutes",
+        "in a pot add the Neutral Oil, Garlic, Sriracha, Soy Sauce, Honey, and Rice Vinegar",
+        "Bring sauce to a boil then lower heat to low simmer",
+        "Cook for 8-10 minutes or until sauce has thickened",
+        "Take salmon out of the oven and brush it with the sauce",
+        "Bake salmon once more for an additional 8-10 minutes"
+      ]
+    },
+    "about": "Literally translated as “stir-fried rice cake,” tteokbokki (떡볶이) is a beloved Korean rice cake dish with many variations and a rich history.  It’s also spelled ddukbokki, ddeokbokki, dukbokki or topokki. This spicy rice cake dish is enormously popular as a street food and also often enjoyed at home. Unlike gungjung tteokbokki, which has been around for hundreds of years, the red spicy tteokbokki has a relatively short history. It was developed in 1953, the year the Korean War ended, by a woman named Ma Bok-rim in the Sindang-dong neighborhood in Seoul. The chewy rice cake in a spicy gochujang sauce instantly became popular as an affordable comfort snack.",
+    "id": 4,
+    "image": {
+      "filename": "",
+      "type": ""
+    }
+  },
+  {
+    "title": "Buttery Baked Salmon",
+    "difficulty": "4",
+    "time": "25",
+    "details": {
+      "ingredients": [
+        {
+          "name": "Skinless Salmon Filets",
+          "amount": "4",
+          "type": "Essential"
+        },
+        {
+          "name": "Salted Butter",
+          "amount": "4 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Old Bay Seasoning",
+          "amount": ".75 Tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Garlic and Herb Seasoning",
+          "amount": ".75 Tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Lemon Juice",
+          "amount": ".5 Tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Fine Sea Salt",
+          "amount": ".25 Tsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Freshly Ground Black Pepper",
+          "amount": "To Taste',
+          "type": "Optional"
+        }
+      ],
+      "instructions": [
+        "Preheat Oven to 425 F",
+        "Line a cooking tray with Aluminum foil, lightly coat with oil or non-stick spray",
+        "Melt butter in a bowl",
+        "Stir in Old Bay, Garlic and Herb Seasoning, Lemon juice, and sea salt",
+        "Place salmon filets on foil covered try",
+        "Season with freshly ground Black Pepper to taste",
+        "Lightly spoon butter sauce onto each filet",
+        "Bake at 425 F for approximately 11-13 minutes"
+      ]
+    },
+    "about": "}
+   {
+    "title": "Honey Sriracha Oven Baked Salmon",
+    "difficulty": "4",
+    "time": "35",
+    "details": {
+      "ingredients": [
+        {
+          "name": "Skin on Salmon",
+          "amount": "1 Lb",
+          "type": "Essential"
+        },
+        {
+          "name": "Neutral Oil (Canola, Vegetable, etc)",
+          "amount": "1 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Minced Garlic",
+          "amount": "1 Clove",
+          "type": "Essential"
+        },
+        {
+          "name": "Sriracha Sauce",
+          "amount": "2 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Soy Sauce",
+          "amount": "1 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Honey",
+          "amount": "1.5 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Rice Vinegar",
+          "amount": "1 Tbsp",
+          "type": "Essential"
+        },
+        {
+          "name": "Sesame Oil",
+          "amount": "1 Tsp",
+          "type": "Optional"
+        },
+        {
+          "name": "Sesame Seeds",
+          "amount": "1 Tbsp",
+          "type": "Optional"
+        }
+      ],
+      "instructions": [
+        "Preheat Oven to 425 F",
+        "Line a cooking tray with Aluminum foil and lay salmon skin side down",
+        "Season salmon with Kosher Salt and Fresh Black Pepper",
+        "Place salmon into oven and cook for 10 minutes",
+        "in a pot add the Neutral Oil, Garlic, Sriracha, Soy Sauce, Honey, and Rice Vinegar",
+        "Bring sauce to a boil then lower heat to low simmer",
+        "Cook for 8-10 minutes or until sauce has thickened",
+        "Take salmon out of the oven and brush it with the sauce",
+        "Bake salmon once more for an additional 8-10 minutes"
+      ]
+    },
+    "about": "Literally translated as “stir-fried rice cake,” tteokbokki (떡볶이) is a beloved Korean rice cake dish with many variations and a rich history.  It’s also spelled ddukbokki, ddeokbokki, dukbokki or topokki. This spicy rice cake dish is enormously popular as a street food and also often enjoyed at home. Unlike gungjung tteokbokki, which has been around for hundreds of years, the red spicy tteokbokki has a relatively short history. It was developed in 1953, the year the Korean War ended, by a woman named Ma Bok-rim in the Sindang-dong neighborhood in Seoul. The chewy rice cake in a spicy gochujang sauce instantly became popular as an affordable comfort snack.",
+    "id": 4,
+    "image": {
+      "filename": "",
+      "type": ""
+    }
+  }",
+    "id": 5,
+    "image": {
+      "filename": "",
+      "type": ""
+    }
   }
 ]
