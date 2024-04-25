@@ -1,4 +1,4 @@
 Setup using node version v21.7.2
 To run:
-`npm install`
+`npm install` * may need to run this in client folder and server folder as well
 `npm start`
